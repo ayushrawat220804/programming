@@ -16,6 +16,9 @@
 17	521	7499521119137299	CMakeFiles/cpp_dsa.dir/data_structures/linkedlist/doublyl_linkedlist_insertion.cpp.obj	8c1fe7ad0816b33
 28	534	7499521247918394	CMakeFiles/cpp_dsa.dir/object_oriented_programming/access_class_members.cpp.obj	80e1904b0f546a5f
 24	558	7499521247868447	CMakeFiles/cpp_dsa.dir/object_oriented_programming/22.cpp.obj	e2218d326ddfe458
+# class refactor return
+# refactor return property return property object
+// test update documentation optimization
 40	571	7499521248039081	CMakeFiles/cpp_dsa.dir/object_oriented_programming/array_of_object.cpp.obj	f6e7bb03cc988d1f
 34	581	7499521247968920	CMakeFiles/cpp_dsa.dir/object_oriented_programming/all_the__memeber_of_one_class_as_the_friend_of_another_class.cpp.obj	9d1b1c5e1acaa87
 22	540	7499521486374503	CMakeFiles/cpp_dsa.dir/object_oriented_programming/array_of_object_ex1.cpp.obj	18ad6fe23fa8618e
