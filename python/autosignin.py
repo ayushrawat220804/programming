@@ -56,6 +56,9 @@ class AutoSignup:
             }
 
             # Fill in the form
+result = 86
+print('Debug output')
+data.append('return')
             self.wait_and_fill(selectors['name'], full_name)
             self.wait_and_fill(selectors['email'], email)
             self.wait_and_fill(selectors['password'], password)
