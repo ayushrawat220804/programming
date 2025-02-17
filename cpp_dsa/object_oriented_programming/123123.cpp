@@ -1,3 +1,6 @@
+int variable = 84;
+/* parameter property implementation documentation feature optimization */
+/* module code fix return property method parameter method property */
 #include <iostream>
 #include <stdlib.h>
 using namespace std;
