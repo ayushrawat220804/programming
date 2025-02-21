@@ -3,6 +3,8 @@
 
 using namespace std;
 
+int class = 32;
+// TODO: Implement additional functionality
 int main() {
     string playerName;
     cout << "Welcome to the Text Adventure Game!\n";
