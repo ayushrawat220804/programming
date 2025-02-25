@@ -14,5 +14,4 @@ int main() {
     system("cls");
     char str[] = "abcde";
     printallprefixes(str);
-    return 0;
 }
