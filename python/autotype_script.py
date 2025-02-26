@@ -32,7 +32,6 @@ def type_text(file_path, delay=0.03):  # Adjusted delay for ~200 WPM
         if char == '\n':  # Replace newline with space since monkeytype expects continuous text
             pyautogui.typewrite(' ')
         else:
-            pyautogui.typewrite(char, interval=delay)
 
 # Path to your text file
 file_path = r"C:\Users\rohit\data_structures\python\StarWars-Episode4 (1).txt"  # Update the text file path
