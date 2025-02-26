@@ -15,8 +15,21 @@ vector<int> twoSum(vector<int>& nums, int target) {
 }
 
 int main() {
-    vector<int> nums =[2, 7, 11, 15];  // Example input
-    int target = 9;
+    vector<int> nums;  // Example input
+    int target;
+    int n;
+
+    cout << "enter arrays size : " ;
+    cin >> n;
+
+    cin.ignore();
+    cout << "enter arrays elements : ";
+    for(int i = 0; i < n; i++){
+        cin >> nums[n];
+    }
+
+    cout << "enter target : " ;
+    cin >> target;
 
     vector<int> result = twoSum(nums, target);
     if (!result.empty()) {
