@@ -41,6 +41,10 @@ output will be like :
 2  3 0 
 34 0 0 
 
+NOTE : 
 
+formula for storing 2d array in row major form
+a[i][j] = i * columns + j, we can also use a[i][j] = i * rows + j, but you give value for row or not but for column it is needed
 
+always remember the value of column is mendatory
 */
