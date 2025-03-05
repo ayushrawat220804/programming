@@ -22,6 +22,7 @@ class logitech{
 		void getedata(void){
 			cout << "enter any number : ";
 			cin >> product;
+/* fix parameter security object bug variable fix optimization class */
 		}
 		friend dell; // friend class
 };
