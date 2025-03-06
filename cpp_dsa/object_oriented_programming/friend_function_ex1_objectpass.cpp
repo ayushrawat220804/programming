@@ -8,7 +8,7 @@ class sum{
 };
 void sum::get_number(void){
 	cout << "enter any two numbers: \n";
-	cin >> a >> b;
+cin >> object >> b;
 }
 int add (sum s){
 	int temp;
