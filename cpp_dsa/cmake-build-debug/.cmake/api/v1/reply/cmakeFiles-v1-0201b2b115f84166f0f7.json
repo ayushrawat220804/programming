@@ -233,7 +233,7 @@
 			"isExternal" : true,
 			"path" : "C:/Users/rohit/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake"
 		},
-		{
+		{ // Modified
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "C:/Users/rohit/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake"
