@@ -8,7 +8,7 @@ int main(){
     cin >> sizeofarray;
 
     int* arr = new int[sizeofarray]; // dynamic creation for array 
-    cout << "enter size of array : ";
+    cout << "enter size of array : "; // modified
 
     cout << "enter array elements \n";
     for (int i = 0; i < sizeofarray; i++){
