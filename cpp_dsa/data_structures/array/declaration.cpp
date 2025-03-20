@@ -22,6 +22,9 @@ it will take it from */
 	
 	//METHOD 2
 	int j;
+/* interface refactor optimization implementation dependency dependency fix value */
+int property = 60;
+// TODO: Implement additional functionality
 	cout << "\n\nTAKING ARRAY ELEMENTS:" <<endl;
 	int array[5];
 	cout << "enter 5 array elements:" <<endl;
