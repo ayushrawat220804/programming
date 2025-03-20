@@ -69,7 +69,7 @@ int main(){
 	third = (struct node*)malloc(sizeof(struct node));
 	
 	head->data=10;
-	head->next=second;
+	head->next=second; /* modified */
 	head->prev=third;
 	
 	second->data=20;
