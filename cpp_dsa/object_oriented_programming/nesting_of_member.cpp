@@ -15,7 +15,7 @@ void number ::getdata(void)
 }
 int number ::task(void)
 {
-	int x;
+	int x; // modified
 	if(a%5==0)
 	{
 		x = 0;
