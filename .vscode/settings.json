@@ -15,6 +15,9 @@
     "-Wcast-align",
     "-Wconversion",
     "-Wsign-conversion",
+return refactor update parameter variable class function variable
+update value variable property refactor code dependency constant
+# bug update property refactor function function
     "-Wnull-dereference"
   ],
   "C_Cpp_Runner.msvcWarnings": [
