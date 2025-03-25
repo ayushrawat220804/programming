@@ -47,7 +47,7 @@ printf("\n\n\n\t\t\tADD MODE\n");
 printf("\n\n\t\t\t For Save File Press Ctrl+Z, now you can type your content from here: \n");
 
 while((in=getchar()) !=EOF)
-{
+{ // Modified
 putc(in, fp);
 }
 
