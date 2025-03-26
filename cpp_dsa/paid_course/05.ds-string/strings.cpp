@@ -1,3 +1,4 @@
+#include <bits/stdc++.h>
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -35,7 +36,7 @@ int main(){
     cout << "taking string as input . . . " << endl;
     string s1;
     getline(cin,s1); // it can take any size of string thats the benift of string class, don't have to worry about lenght
-    cout << s1 << endl;
+    cout << "you wrote : " << s1 << endl;
 
 
     string s2;
@@ -58,6 +59,32 @@ int main(){
     cout << "size of string s6 : " << endl; 
     cout << s6.size() << endl;
     cout << s6.length() << endl; // both size and length are same so they will give same output , we can use anyone of them
+    cout << "substring function " << endl;
+    string st = "youaregood";
+    cout << st.substr() << endl; // it needs index
+    string s7 = "needforspeed"; 
+    cout << s7.substr(5) << endl; // it will give string after idx 5
+    cout << s7.substr(0) << endl; // it will give string after idx 0 , we can also write without 0
+    cout << s7.substr(3,3) << endl; // it wil give string after idx 3 to 3 characters , 
+    // like substr(index, length of characters to iterate or print)
+    string s8 = s7.substr(3,3);
+    cout << s8 << endl;
+    cout << s7.find("spee") << endl;
+    int x = 123;
+    cout << "integer x is : " << x << endl;
+    string y = to_string(x); // to_string function will convert integer to string
+    cout << "now this is a string : " << y << endl;
+    cout << "now lets change string data " << endl;
+    y[1] = '2'; // we have to treat it like a string now 
+    cout << y << endl;
+    y.push_back('23'); 
+    cout << y << endl;
+
+    int z;
+    z = atoi(y.c_str()); // it will help to convert string to integer
+    cout << z << endl; 
+
+
 
 
 

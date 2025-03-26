@@ -1,0 +1,12 @@
+#!bin\bash
+
+echo enter a number to store in num 
+read num
+
+echo you entered $num 
+
+if ( $num -gt 100 ) then {
+echo $num is greater }
+else {
+echo no $num is not greater!! }
+fi
