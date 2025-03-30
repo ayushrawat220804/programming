@@ -57,7 +57,6 @@ it will take it from */
 	}
 // TODO: Implement additional functionality
 	else {
-		cout << "sorry invalid option. " <<endl;
 	}
 	
 return 0;	
