@@ -17,7 +17,13 @@ int main(){
     vectorstring.push_back("banana");
     cout << vectorstring[1] << endl;
     vectorstring.push_back("mango");
-    cout << vectorstring[2] << endl;
+    cout << vectorstring[2] << endl << endl;
+
+    // printing vectorstrings using loop
+
+    for (int i = 0; i < n.length(); i ++){
+        cout << vectorstring[i] << " ";
+    }
 
     return 0;
 }
