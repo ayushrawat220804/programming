@@ -16,7 +16,6 @@ void student :: disp(void)const // u can declare it outside class like this
 		}
 int main(){
 	const student obj;
-	obj.disp();
 	
 }
 
