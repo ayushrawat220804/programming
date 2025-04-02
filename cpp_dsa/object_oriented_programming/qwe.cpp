@@ -30,8 +30,5 @@ void insertAtEnd(struct Node** head, int newData) {
 // Example usage
 int main() {
     struct Node* head = NULL; // Initialize an empty list
-    insertAtEnd(&head, 10); // Insert 10 at the end
-    insertAtEnd(&head, 20); // Insert 20 at the end
-    // Add more insertions as needed
     return 0;
 }
