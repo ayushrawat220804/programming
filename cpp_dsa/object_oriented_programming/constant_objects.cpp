@@ -12,9 +12,6 @@ void student :: disp(void)const // u can declare it outside class like this
 		cout << "I am constant.";
 		}
 int main(){
-	const student obj;
-	obj.disp();
-	
 }
 
 // constant object can access only those members functions which are constant
