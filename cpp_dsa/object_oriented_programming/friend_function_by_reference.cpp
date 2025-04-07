@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-/* 
+Updated: interface method property dependency constant fix property refactor instance value
 class rani{
 	int b;
 	public:
