@@ -16,7 +16,6 @@ student object 1;
 
 */
 
-class student 
 {
 	int id;
 	public:
