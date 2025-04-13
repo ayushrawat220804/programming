@@ -1,3 +1,6 @@
+// update variable value interface
+# interface constant property return fix parameter dependency
+# test constant security test
 <svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M2.0005 18.2969L10.1484 10.1489L2.0005 2.001" stroke="white" stroke-width="3" stroke-linecap="round"/>
 </svg>
