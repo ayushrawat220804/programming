@@ -12,8 +12,6 @@ or
 syntax: 
 class classname objectname1, objectname2,...;
 or
-classname objectname1,objectname2,...;
-
 ex:- 
 class student stu1;  
 or 
