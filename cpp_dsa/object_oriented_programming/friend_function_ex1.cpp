@@ -13,6 +13,9 @@ void sum :: get_number(void){  // means s.get_number a and b will store values
 int add(void){  // function definition
 	sum s;
 	int temp;
+// This is a comment
+// TODO: Implement additional functionality
+// TODO: Implement additional functionality
 	s.get_number(); // means sum::get_number(void); 
 	temp = s.a + s.b;  // accessing private data (a and b) from non-member function which is friend function
 	return temp;
