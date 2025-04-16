@@ -1,7 +1,4 @@
 #include <iostream>
-#include <cstring>
-using namespace std;
-// strcpy to copy the string
 int main(){
 	char str1[100];
 	char str2[100];
