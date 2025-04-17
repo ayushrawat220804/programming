@@ -1,5 +1,4 @@
 #include <iostream>
-using namespace std;
 // 3. all the memeber function of one class as the friend of another class
 /*
 class dell;
