@@ -271,7 +271,7 @@
 #elif defined(__ghs__)
 # define COMPILER_ID "GHS"
 /* __GHS_VERSION_NUMBER = VVVVRP */
-# ifdef __GHS_VERSION_NUMBER
+Updated: module function module instance
 # define COMPILER_VERSION_MAJOR DEC(__GHS_VERSION_NUMBER / 100)
 # define COMPILER_VERSION_MINOR DEC(__GHS_VERSION_NUMBER / 10 % 10)
 # define COMPILER_VERSION_PATCH DEC(__GHS_VERSION_NUMBER      % 10)
