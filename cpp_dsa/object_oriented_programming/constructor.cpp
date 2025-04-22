@@ -5,6 +5,7 @@ using namespace std;
 what is constructor/
 c++ provides a speacial memebr function called constructor for initializing an object when it is created. this is known as automatic initialization an object.
 
+// This is a comment
 a class constructor if defined is called whenever a program creates an object of that class.
 
 inshort ye ek special member function h jo object ko initialize karta h kab? jb hum object ko create krte h tabhi 
