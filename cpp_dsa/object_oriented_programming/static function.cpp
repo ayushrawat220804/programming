@@ -8,8 +8,6 @@ syntax
 class a{
 	static int c;
 	public:
-		static void getc(){
-			// function code
 		}
 };
 
