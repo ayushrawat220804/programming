@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css" </link> -->
+    <title>Document</title>
+    <style>
+        /* Style only table2 using class */
+        .fancy-table {
+            width: 80%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+    
+        .fancy-table thead {
+            background: linear-gradient(90deg, #ff6a00, #ee0979);
+            color: white;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+    
+        .fancy-table thead th {
+            padding: 16px;
+        }
+    
+        .fancy-table tbody tr {
+            border-bottom: 1px solid #ddd;
+            transition: background 0.3s;
+        }
+    
+        .fancy-table tbody tr:hover {
+            background-color: #f9f9f9;
+        }
+    
+        .fancy-table td {
+            text-align: center;
+            padding: 14px;
+            font-size: 16px;
+        }
+    
+        .fancy-table tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+        
+</head>
+
+<body>
+    welcome to my first website
+    <p>if you want to go to google - <a href="https:/google.com/">click me </a></p>
+    <p>this is a paragraph example</p>
+    <h1> this is heading 1</h1>
+    <h2> this is heading 2</h2>
+    <h3> this is heading 3</h3>
+    <h4> this is heading 4</h4>
+    <h5> this is heading 5</h5>
+    <h6> this is heading 6</h6>
+    <button onclick="clickme()">click me</button>
+    <h2>some images . . . </h2>
+    <h2>images of anime</h2>
+    <img src="https://images.pexels.com/photos/679997/pexels-photo-679997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="lotus image" height="420">
+    <h2>local images</h2>
+    <img src="need_for_speed_heat_4k-3840x2160.jpg" alt="nfsheat" height="420">
+
+    <br>
+    <b>this is bold text</b>
+    <br>
+    <i>this is italic text</i>
+    <br>
+    <u>this underline text</u>
+    <br>
+    <br>
+    <big> this is big text</big>
+    <br>
+    <small> this is small text</small>
+    <br>
+    <hr>
+    i am a horizontal line
+    <br>
+
+    this <sub> is </sub> subscript
+    <br>
+    and this <sup> is </sup> supscript or superscript
+    <p> for this if we want to write water in chemistry we can write it like - h<sub>2</sub>0</p>
+
+
+    <!-- html try to skip spaces for eg  -->
+    <p>this
+        is a
+        paragraph text, without pre
+    </p>
+    <!-- as you can see it hides the extra spaces , so to show that extra space we can write our paragraph inside pre tag -->
+    <pre>this 
+        is a 
+        paragraph                text , using pre
+      </pre>
+
+    <p>this is a button <button onclick="overlay()">click me</button></p>
+    link to - <a href="https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI">gta 6 wikipedia</a>
+
+
+
+    <hr>
+    <h1>chapter 3</h1>
+    <!-- CHAPTER 3 -->
+    <!-- why to use header footer main , because to helps to search engines like google to make our page into to top results seo search engine optimizations-->
+
+    <header> this is header</header>
+
+    <main> this is main
+        <section> this is a section
+            <article> this is artical inside section
+                <div> this is a content inside div <br>
+                    so basically div tag takes all the width , 100% width, known as block level elemnets
+                </div>
+                <div> this is another div</div>
+                <div> on more div</div>
+                <span> this is a content inside span <br>
+                    so basically span tag takes just necessary width
+                </span>
+                <span> this is another span</span>
+                <span> one more span</span>
+            </article>
+        </section>
+        <aside>this is aside text</aside>
+    </main>
+
+
+    <footer> this is footer </footer>
+
+
+    <!-- navigation -->
+    <nav> <a href="/home">home</a>
+        <!-- to go inside a folder for a file we can use /foldername/filename or foldername/filename -->
+        <a href="/pages/about.html" target="_blank"> about us </a>
+        <a href="/bottom"> bottom</a>
+        <a href="https:/ayushrawat220804.github.io" target="_blank"> ayush portfolio website!!</a>
+
+
+    </nav>
+
+
+    <!-- chapter 4 -->
+    chapter 4
+    <hr>
+    <div>list in html </div>
+    <p>we have list in htmls, li stands for list item, ordered list as ol, unordered list as ul, below are some examples
+    </p>
+
+    <!-- ordered list ,means 1,2,3,4,5, in a order-->
+    <h1>ordered</h1>
+    <ol>this is ordered list
+        <li>cake</li>
+        <li>apple</li>
+        <li>mango</li>
+        <li>car</li>
+        <li>bus</li>
+    </ol>
+
+    <!-- unordered list ,means in points or radio button format-->
+    <h1>any order</h1>
+    <ul>this is unorded list
+        <li>cake</li>
+        <li>apple</li>
+        <li>mango</li>
+        <li>car</li>
+        <li>bus</li>
+    </ul>
+    <h1>definition list </h1>
+    <dl>
+        <dt>definition term</dt>
+        <dd>definition data</dd>
+        <dt>python</dt>
+        <dd>a high level programming language</dd>
+        <dt>javascript</dt>
+        <dd>a scripting languages used in websited to make it work complex tasts </dd>
+    </dl>
+
+    <h1>tables in html</h1>
+    <p>we have some table keywords in html as table , thead for table header, tr for table row, td for table data</p>
+    <table>
+        <thead>table example
+            <tr>
+                <th>name</th>
+                <th>age</th>
+                <th>salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ayush</td>
+                <td>19</td>
+                <td>20000</td>
+            </tr>
+            <tr>
+                <td>karan</td>
+                <td>20</td>
+                <td>20001</td>
+            </tr>
+            <tr>
+                <td>akshit</td>
+                <td>18</td>
+                <td>18942</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- table2 -->
+
+    <table class="fancy-table">
+        <thead>table example with css
+            <tr>
+                <th>name</th>
+                <th>age</th>
+                <th>salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ayush</td>
+                <td>19</td>
+                <td>20000</td>
+            </tr>
+            <tr>
+                <td>karan</td>
+                <td>20</td>
+                <td>20001</td>
+            </tr>
+            <tr>
+                <td>akshit</td>
+                <td>18</td>
+                <td>18942</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

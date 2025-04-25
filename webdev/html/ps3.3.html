@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my fav websites</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+    
+        div {
+            margin: 15px;
+        }
+    
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 12px 25px;
+            border-radius: 8px;
+            color: white;
+            display: inline-block;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+    
+        a[href*="google"] {
+            background: linear-gradient(45deg, #4285F4, #34A853, #FBBC05, #EA4335);
+            background-size: 300% 300%;
+            animation: gradientShift 5s ease infinite;
+        }
+    
+        a[href*="discord"] {
+            background: linear-gradient(45deg, #7289da, #99aab5, #2c2f33, #23272a);
+            background-size: 300% 300%;
+            animation: gradientShift 6s ease infinite;
+        }
+    
+        a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+    
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <h1>my fav websites</h1>
+    </header>
+    <main>
+
+        <div><a href="https:/google.com" target="_blank">google</a></div>
+        <div><a href="https:/discord.com/me" target="_blank">discord</a></div>
+
+        <div><a href="https:/youtube.com" target="_blank">youtube</a></div>
+        <div><a href="https:/epicgames.com" target="_blank">epicgames</a></div>
+    </main>
+
+    <footer>created with love!!</footer>
+
+</body>
+
+</html>
