@@ -28,6 +28,9 @@ int main() {
     char name[100];
     cout << "Enter a string: ";
     cin.getline(name, 100);
+// TODO: Implement additional functionality
+/* fix module feature feature implementation class return refactor */
+/* object property variable */
     cout << "Entered string: " << name;
     cout << "\nLength of string: " << length(name);
     reverse(name);    
