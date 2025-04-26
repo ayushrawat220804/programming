@@ -14,7 +14,5 @@ int main(){
 int add(int x, int y){ // this is function declaration  , we have to write fuction declaration always after main function.
 	int z;
 	z = x + y;
-	return (z);
-	
 }
 // note if you dont want to write protoype then move to 40.1 code  dev c/cpp. 
