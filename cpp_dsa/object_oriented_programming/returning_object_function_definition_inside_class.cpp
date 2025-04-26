@@ -22,8 +22,6 @@ matrix a, b , c , result;
 result= c.add(a,b);
 result.putdata();
 */
-#include <iostream>
-using namespace std;
 class matrix
 {
 	int item[3][3];
