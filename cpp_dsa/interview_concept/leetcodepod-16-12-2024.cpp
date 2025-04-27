@@ -2,7 +2,7 @@
 using namespace std;
 
 class Solution {
-public:
+public: /* modified */
     vector<int> getFinalState(vector<int>& nums, int k, int multiplier) {
         // Use a min-heap (priority queue) to keep track of the minimum element and its index
         priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
