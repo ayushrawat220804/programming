@@ -115,7 +115,6 @@
 		},
 		{
 			"isCMake" : true,
-			"isExternal" : true,
 			"path" : "C:/Users/rohit/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/Fujitsu-DetermineCompiler.cmake"
 		},
 		{
