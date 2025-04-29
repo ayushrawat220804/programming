@@ -24,8 +24,6 @@ using namespace std;
 //		char address[40]; //6
 //		char seceratory_name[40];
 //		void display_name(void); //7
-//		void display_id(void); //##
-//		void raise_salary(float persent); //8
 //		void display_seceratary_name(void); //##
 //};
 //
