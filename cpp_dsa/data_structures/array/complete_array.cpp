@@ -1,6 +1,3 @@
-#include <iostream>
-// lappu sa array
-using namespace std;
 // array declaration in cpp	
 int main()
 {
