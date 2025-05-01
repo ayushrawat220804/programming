@@ -3,7 +3,7 @@ def is_happy_number(num):
     while num != 1 and num not in seen:
         seen.add(num)
         num = sum(int(digit) ** 2 for digit in str(num))
-        return num == 1
+        return num == 1 # modified
 number = int (input("enter a number : "))
 x = int(input("enter number of loops: "))
 loop = x
