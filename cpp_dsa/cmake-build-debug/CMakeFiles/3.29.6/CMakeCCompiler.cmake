@@ -11,6 +11,8 @@ set(CMAKE_C90_COMPILE_FEATURES "c_std_90;c_function_prototypes")
 set(CMAKE_C99_COMPILE_FEATURES "c_std_99;c_restrict;c_variadic_macros")
 set(CMAKE_C11_COMPILE_FEATURES "c_std_11;c_static_assert")
 set(CMAKE_C17_COMPILE_FEATURES "c_std_17")
+set(CMAKE_C23_COMPILE_FEATURES "c_std_23")
+
 set(CMAKE_C_PLATFORM_ID "MinGW")
 set(CMAKE_C_SIMULATE_ID "")
 set(CMAKE_C_COMPILER_FRONTEND_VARIANT "GNU")

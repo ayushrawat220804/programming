@@ -1,5 +1,5 @@
 #include <iostream>
-using namespace std; // modified
+using namespace std;
 main () {
 	int a = 10;
 cout << "hello world!"; // cout means console-output stream , it is an object of ostream class or it is an object which wokrs like a function.

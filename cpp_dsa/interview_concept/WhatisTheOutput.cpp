@@ -2,6 +2,8 @@
 #include <cstdio>
 using namespace std;
 int main (){
+    system("cls");
+    int n = printf("hello world!"); // first output?
     int m = printf("\0"); // second output ?
     int o = printf(""); // third output ?
     int p = printf("\n"); // fourth ouput ?
@@ -14,5 +16,5 @@ int main (){
     cout << endl;
     cout << p;
     
-    return 0; // modified
+    return 0;
 }

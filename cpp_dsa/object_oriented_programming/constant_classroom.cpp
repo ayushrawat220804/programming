@@ -19,6 +19,7 @@ int main(){
 	mystudent_roll s;
 	s.getid();
 	s.setid();
+//	s.salary = 23000; this is not the right way 
 	return 0;
 }
 /*

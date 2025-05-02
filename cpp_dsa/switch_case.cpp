@@ -12,6 +12,8 @@ int main(){
 			cout << "you have entered 1 which means, ";
 			cout << "i am good."<<endl;
 			break;
+		}
+		case 2:
 		{
 			cout << "you have entered 2 which means, i am not good." << endl;
 			break;

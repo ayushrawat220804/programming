@@ -10,7 +10,7 @@ class sum{
 			sum temp;
 			temp.a = s.a + s.b;
 			return temp;
-		} // Modified
+		}
 };
 void sum :: getnumber(void){
 	cout << "enter any two numbers : " << endl;
