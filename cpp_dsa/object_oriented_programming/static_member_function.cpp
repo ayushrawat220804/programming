@@ -8,6 +8,7 @@ class class_name
 ...
 ...
 static data_type data member;
+for outside class
 static return_type function_name();
 
 };

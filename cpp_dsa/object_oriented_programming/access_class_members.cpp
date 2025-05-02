@@ -18,6 +18,6 @@ class student
 		}
 };
 int main(){
-cout << "hello return <<endl;
+	cout << "hello world" <<endl;
 	return 0;
 }

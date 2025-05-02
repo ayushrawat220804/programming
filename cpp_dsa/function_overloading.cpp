@@ -27,6 +27,7 @@ void fun(int a){
 }
 void fun(int a,int b){
 	cout << "sum of the two numbers: " << a+b;
+}
 // int fun(){}
 //
 int main(){

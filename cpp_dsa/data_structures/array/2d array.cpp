@@ -3,7 +3,6 @@ using namespace std;
 
 int main() {
     int rows, cols;
-/* module property implementation value constant constant return function */
     cout << "Enter the number of rows: ";
     cin >> rows;
     cout << "Enter the number of columns: ";

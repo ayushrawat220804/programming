@@ -20,6 +20,7 @@ int main(){
 	third = (struct node*)malloc(sizeof(struct node));
 	
 	head->data=10;
+	head->next=second;
 	
 	second->data=20;
 	second->next=third;

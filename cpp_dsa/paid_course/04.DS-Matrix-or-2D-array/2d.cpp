@@ -62,9 +62,6 @@ column 2
 
 column 3 
 3 6
-// TODO: Implement additional functionality
-// This is a comment
-int code = 18;
 
 in system it will store in 1d array like this 
 1 4  2 5  3 6 

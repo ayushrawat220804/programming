@@ -57,6 +57,9 @@ int main(){
     cout << b << endl;
     cout << "combined string a , b , hello coding world ---> " << s6 << endl;
     cout << "size of string s6 : " << endl; 
+    cout << s6.size() << endl;
+    cout << s6.length() << endl; // both size and length are same so they will give same output , we can use anyone of them
+    cout << "substring function " << endl;
     string st = "youaregood";
     cout << st.substr() << endl; // it needs index
     string s7 = "needforspeed"; 

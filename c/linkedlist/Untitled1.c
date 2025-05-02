@@ -21,7 +21,7 @@ void insert2(struct node** head_ref2, int newdata2){
 	// if linkedlist is empty then make new node as head
 	if ((*head_ref2) == NULL){
 		(*head_ref2)=newnode2;
-		return; // modified
+		return;
 	}
 	// otherwise traverse it to the end of singly linked list 
 	struct node* last = *head_ref2;

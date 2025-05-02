@@ -60,7 +60,6 @@ class rani{
 };
 void add (rahul m, rani n){
 	cout << "total marks of both: " << m.a + n.b<< endl;
-// TODO: Implement additional functionality
 }
 int main(){
 	rahul k;

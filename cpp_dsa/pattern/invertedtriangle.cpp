@@ -2,6 +2,9 @@
 using namespace std;
 // triangle pattern
 int main(){
+	int a,i,j;
+	cout << "enter number: ";
+	cin >> a;
 	cout <<endl;
 	for (i=0;i<a;i++) // a is number of lines of pattern to print , i is x axis, i is y-axis
 	{

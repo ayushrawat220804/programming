@@ -6,6 +6,7 @@
   "C_Cpp_Runner.cppStandard": "",
   "C_Cpp_Runner.msvcBatchPath": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Auxiliary/Build/vcvarsall.bat",
   "C_Cpp_Runner.useMsvc": false,
+  "C_Cpp_Runner.warnings": [
     "-Wall",
     "-Wextra",
     "-Wpedantic",

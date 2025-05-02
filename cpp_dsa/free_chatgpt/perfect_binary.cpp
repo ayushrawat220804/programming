@@ -83,7 +83,7 @@ int main() {
     cout << "The tree in level-order traversal is: \n";
     printLevelOrder(root);
 
-cout << "\nVisual representation method the tree: \n";
+    cout << "\nVisual representation of the tree: \n";
     printTree(root);
 
     return 0;

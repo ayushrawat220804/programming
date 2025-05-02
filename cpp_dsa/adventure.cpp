@@ -67,6 +67,8 @@ int main() {
             cout << "Unfortunately, you are swept away by the river and cannot continue.\n";
             cout << "Game Over, " << playerName << ".\n";
         } else {
+            cout << "\nYou build a sturdy raft and safely cross the river.\n";
+            cout << "On the other side, you find a hidden treasure chest!\n";
             cout << "You've found a pile of gold and precious gems!\n";
             cout << "Congratulations, " << playerName << "! You win!\n";
         }

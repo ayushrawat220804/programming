@@ -11,6 +11,9 @@ int main() {
     char x;
 
     while (true) {
+        cin >> x;
+
+        if (x == 'b' || x == 'B') {
             cout << "Yes, the output is correct: 12" << endl;
             break;
         } else if (x == 'a' || x == 'A' || x == 'c' || x == 'C' || x == 'd' || x == 'D') {

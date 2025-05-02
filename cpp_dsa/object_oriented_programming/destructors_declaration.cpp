@@ -9,6 +9,9 @@ class student{
 		~  student() // destructor declaration
 		{
 			cout << "thanks for using this programme. " << endl;
+		}
+};
+main(){
 	student s1; // s1 is an object
 }
 

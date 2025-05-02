@@ -1,4 +1,4 @@
-Updated: constant constant documentation fix
+#!bin\bash
 
 echo enter a number to store in num 
 read num

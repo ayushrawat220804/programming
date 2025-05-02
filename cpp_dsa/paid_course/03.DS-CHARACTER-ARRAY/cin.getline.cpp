@@ -16,4 +16,7 @@ int main(){
 	// cin.getline ( sting name, size, 'a' ) , here delimiter is 'a' means it will stop taking input
 	// asap it reades input as 'a' which is delimiter here. 
  	cout << "your name is : " << name;
+	cout << "\nlength of the string : " , length(name);
+	
+	return 0;
 }

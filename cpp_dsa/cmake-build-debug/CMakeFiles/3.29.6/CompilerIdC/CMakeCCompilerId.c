@@ -271,7 +271,7 @@
 #elif defined(__ghs__)
 # define COMPILER_ID "GHS"
 /* __GHS_VERSION_NUMBER = VVVVRP */
-Updated: module function module instance
+# ifdef __GHS_VERSION_NUMBER
 # define COMPILER_VERSION_MAJOR DEC(__GHS_VERSION_NUMBER / 100)
 # define COMPILER_VERSION_MINOR DEC(__GHS_VERSION_NUMBER / 10 % 10)
 # define COMPILER_VERSION_PATCH DEC(__GHS_VERSION_NUMBER      % 10)
@@ -561,7 +561,6 @@ char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";
 #  define PLATFORM_ID "VxWorks"
 
 # else /* unknown platform */
-int return = 49;
 #  define PLATFORM_ID
 # endif
 

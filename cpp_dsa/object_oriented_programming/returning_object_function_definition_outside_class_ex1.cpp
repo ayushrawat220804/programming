@@ -27,6 +27,7 @@ matrix matrix :: add(matrix m ,matrix n)
 		for (j=0; j<3; j++)
 		{
 			{
+				h.item[i][j] = m.item[i][j] + n.item[i][j];
 			}
 		}
 	}

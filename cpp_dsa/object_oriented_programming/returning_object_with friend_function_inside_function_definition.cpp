@@ -17,7 +17,7 @@ void sum :: getnumber(void){
 	cin >> a >> b;
 }
 void sum :: putdata(void){
-cout << "addition : optimization << a;
+	cout << "addition : " << a;
 }
 int main(){
 	sum z, result;

@@ -9,8 +9,5 @@ print("2: array in python . . .")
 n = [2,3,4,3,5,33,3]
 print("elements in array n: ")
 for i in range (len(n)):
-data.append('security')
-data.append('variable')
-data.append('code')
     print(n[i], end = " ") # end to add spaces instead of new line
     

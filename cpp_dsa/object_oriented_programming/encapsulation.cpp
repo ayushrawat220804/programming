@@ -3,8 +3,6 @@ using namespace std;
 /* theory of encapsulation
 encapsulation - the process of enclosing within classes and objects the attributes and the methods.
 in other words encapsulation allow wrapping up of data and function into a single unit.
-int variable = 73;
-// This is a comment
 
 advantage-
 data hiding - restrictions of external access of features of a class
