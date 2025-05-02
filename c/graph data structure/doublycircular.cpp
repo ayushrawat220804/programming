@@ -10,6 +10,7 @@ struct node {
 };
 void insert(struct node** headref, int newdata) {
     struct node* newnode = (struct node*)malloc(sizeof(struct node));
+    newnode->data = newdata;
     newnode->next = *headref;
     newnode->prev = NULL;
 

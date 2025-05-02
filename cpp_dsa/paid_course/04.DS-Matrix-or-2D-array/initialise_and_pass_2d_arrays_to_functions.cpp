@@ -34,6 +34,7 @@ int arr[][3] = {{1,2,3}, {4,5,6}, {7,8,9}}
 
 in arrays whether it's 1d or 2d , null spaces will be consider as 0
 eg : int arr[4] = {1,2,};
+output will be like : 1 2 0 0 
 
 int arr[][3] = {{2,3}{34}};
 output will be like :

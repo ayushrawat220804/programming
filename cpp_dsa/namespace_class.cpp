@@ -9,6 +9,9 @@ namespace variable1 {
         }
     };
 }
+
+namespace variable2 {
+    class Printer {
     public:
         void printMessage(string s) {
             cout << "Hello from variable2: " << s << endl;

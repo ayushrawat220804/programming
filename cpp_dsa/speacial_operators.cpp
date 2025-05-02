@@ -16,7 +16,7 @@ int main(){
 	cout << --a << endl;  // value is 2-1 = 1
 	cout << a << endl << endl;  // value is 1
 	
-Updated: class function dependency optimization
+// assignment operator 
 // +=, -=, *=, /= are 4 main assignment operator.
     int m = 12; // value of m is 12
 	m +=10 ; // here using += operator value of m which is 12 is increase by + 10 now it is 22. 

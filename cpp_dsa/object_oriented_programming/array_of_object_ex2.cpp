@@ -1,6 +1,4 @@
 #include <iostream>
-// This is a comment
-int class = 98;
 #include <conio.h>
 using namespace std;
 class company

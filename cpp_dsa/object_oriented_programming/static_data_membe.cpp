@@ -24,6 +24,7 @@ static int num;
 int number :: num ; // defintion of static data member
 or
 int number :: num = 10;
+
 in static data type only one memory location is created and all object can share it
 */
 

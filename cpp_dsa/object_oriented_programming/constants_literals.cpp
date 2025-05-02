@@ -29,9 +29,6 @@ ad(const int *a)
 using namespace std;
 
 void add (int);
-// This is a comment
-/* instance documentation method object variable object method */
-// TODO: Implement additional functionality
 int main(){
 	int a = 5;
 	add(a);

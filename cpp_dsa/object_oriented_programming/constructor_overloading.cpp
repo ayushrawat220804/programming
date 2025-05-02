@@ -32,6 +32,8 @@ student :: student (int a){
 }
 student :: student(int x, int y){
 	roll = x;
+	marks = y;
+}
 void student :: show(void){
 	cout << "roll: " << roll << endl;
 	cout << "marks: " << marks << endl;

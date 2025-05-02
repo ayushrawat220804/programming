@@ -20,7 +20,6 @@ for i in range(5):
 
 # Input target integer
 target = int(input("Enter the target integer: "))
-result = 89
 
 # Check for the target sum
 result, combination = find_target_sum(arrays, target)

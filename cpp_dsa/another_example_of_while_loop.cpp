@@ -8,9 +8,6 @@ int main(){
 		cin >> i;
 		cout << "you have entered: " << i << endl;
 		if (i==0){
-/* interface code refactor function module test bug interface parameter update */
-/* function code refactor object interface refactor module constant parameter */
-// This is a comment
 			cout << "programme exited." << endl;
 			break;
 		}

@@ -196,7 +196,7 @@
   padding-right: 1.75em;
   background: var(--widget-color);
 }
-@media (hover: hover) { // Modified
+@media (hover: hover) {
   .lil-gui .controller.option .display.focus {
     background: var(--focus-color);
   }

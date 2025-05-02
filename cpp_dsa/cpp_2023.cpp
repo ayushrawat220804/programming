@@ -2,6 +2,9 @@
 using namespace std;
 class rohit{
     public:
+    char name[20];
+    void yourname(){
+        std::cout << "enter you name : " ;
         std::cin >> name;
     }
     void display(){

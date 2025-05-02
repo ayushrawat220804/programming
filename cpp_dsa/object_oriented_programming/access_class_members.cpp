@@ -1,6 +1,4 @@
 #include <iostream>
-// TODO: Implement additional functionality
-int class = 82;
 using namespace std;
 // access class members using object
 // class_name class_object_name

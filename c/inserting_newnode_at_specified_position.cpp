@@ -9,8 +9,6 @@ insert_after(struct node* head, int x, int info)
 	ptr = head;
 	while(ptr->data!=x&&ptr!=null)
 	{
-// TODO: Implement additional functionality
-/* fix test return dependency class value test feature */
 		ptr=ptr->next;
 	}
 	if(ptr->data==x)

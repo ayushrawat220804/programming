@@ -1,4 +1,5 @@
 #include <iostream>
+using namespace std;
 // 3. all the memeber function of one class as the friend of another class
 /*
 class dell;
@@ -21,7 +22,6 @@ class logitech{
 		void getedata(void){
 			cout << "enter any number : ";
 			cin >> product;
-/* fix parameter security object bug variable fix optimization class */
 		}
 		friend dell; // friend class
 };

@@ -497,9 +497,6 @@ char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";
 # define PLATFORM_ID "Tru64"
 
 #elif defined(__riscos) || defined(__riscos__)
-// TODO: Implement additional functionality
-/* value refactor instance variable test parameter feature value */
-// This is a comment
 # define PLATFORM_ID "RISCos"
 
 #elif defined(__sinix) || defined(__sinix__) || defined(__SINIX__)

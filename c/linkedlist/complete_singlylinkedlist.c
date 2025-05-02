@@ -11,6 +11,8 @@ void insert1(struct node** head_ref, int newdata){
 	newnode->data=newdata;
 	newnode->next=*head_ref;
 	//for updating the singly linkedlist
+	*head_ref=newnode;
+}
 
 void insert2(struct node** head_ref2, int newdata2){
 	struct node* newnode2 = (struct node*)malloc(sizeof(struct node));

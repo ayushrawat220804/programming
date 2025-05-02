@@ -11,9 +11,6 @@ driver.get("https://monkeytype.com/")
 # Wait for the page to load
 time.sleep(5)
 
-// bug documentation return
-optimization security class feature method dependency
-// implementation refactor constant optimization feature function constant dependency
 # Find the typing input area
 input_area = driver.find_element_by_class_name("typing-input")
 

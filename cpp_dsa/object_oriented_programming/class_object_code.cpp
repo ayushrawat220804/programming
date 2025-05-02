@@ -13,6 +13,7 @@ class student
 			cout << "roll displayed as: " << roll << endl;
 		}
 };
+void student :: getdata(void) // we have define this data outside the class
 {
 	cout << "enter name: ";
 	cin >> name;

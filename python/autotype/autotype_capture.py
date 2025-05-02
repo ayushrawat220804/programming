@@ -50,6 +50,8 @@ def save_word_region(region):
     print(f"Word region saved to word_region.json: {region}")
 
 def load_word_region():
+    """Load the word region coordinates from the file."""
+    if os.path.exists("word_region.json"):
         with open("word_region.json", "r") as file:
             region = json.load(file)
         print(f"Word region loaded from word_region.json: {region}")

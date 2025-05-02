@@ -2,7 +2,7 @@
 using namespace std;
 // 2nd example of objects as function arguments
 class matrix
-{ // Modified
+{
 	private:
 		int item[3][3]; // 3 by 3 matrix , i as x axis, j as y axis
 	public:
