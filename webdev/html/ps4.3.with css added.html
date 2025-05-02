@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://khaby.rocani.co/ -->
+<html class="has-scroll-init sound-mute is-init"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Khaby Lame - ICON Magazine Presents Social Media Superstar</title><meta name="description" content="He stands for everything that gives us hope: he is young, has a sense of humour, a warm heart and a clear point of view. Italian Khaby Lame is living proof that destiny is something that can be challenged."><link rel="apple-touch-icon" sizes="180x180" href="https://khaby.rocani.co/meta/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://khaby.rocani.co/meta/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://khaby.rocani.co/meta/favicon-16x16.png"><link rel="manifest" href="https://khaby.rocani.co/meta/site.webmanifest"><link rel="mask-icon" href="https://khaby.rocani.co/meta/safari-pinned-tab.svg" color="#303030"><meta name="msapplication-TileColor" content="#fbf2da"><meta name="theme-color" content="black"><meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"><meta property="og:title" content="Khaby Lame - ICON Magazine Presents Social Media Superstar"><meta property="og:description" content="He stands for everything that gives us hope: he is young, has a sense of humour, a warm heart and a clear point of view. Italian Khaby Lame is living proof that destiny is something that can be challenged."><meta property="og:image" content="https://khaby.iconmagazine.de/assets/meta/social-share.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:url" content="https://khaby.iconmagazine.de"><meta property="og:type" content="article"><meta name="next-head-count" content="18"><link rel="preload" href="./ps4.3.with css added_files/9b36036d13e0625b.css" as="style"><style>.lil-gui {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: 1;
+  font-weight: normal;
+  font-style: normal;
+  text-align: left;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  --background-color: #1f1f1f;
+  --text-color: #ebebeb;
+  --title-background-color: #111111;
+  --title-text-color: #ebebeb;
+  --widget-color: #424242;
+  --hover-color: #4f4f4f;
+  --focus-color: #595959;
+  --number-color: #2cc9ff;
+  --string-color: #a2db3c;
+  --font-size: 11px;
+  --input-font-size: 11px;
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-family-mono: Menlo, Monaco, Consolas, "Droid Sans Mono", monospace;
+  --padding: 4px;
+  --spacing: 4px;
+  --widget-height: 20px;
+  --name-width: 45%;
+  --slider-knob-width: 2px;
+  --slider-input-width: 27%;
+  --color-input-width: 27%;
+  --slider-input-min-width: 45px;
+  --color-input-min-width: 45px;
+  --folder-indent: 7px;
+  --widget-padding: 0 0 0 3px;
+  --widget-border-radius: 2px;
+  --checkbox-size: calc(0.75 * var(--widget-height));
+  --scrollbar-width: 5px;
+}
+.lil-gui, .lil-gui * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.lil-gui.root {
+  width: var(--width, 245px);
+  display: flex;
+  flex-direction: column;
+}
+.lil-gui.root > .title {
+  background: var(--title-background-color);
+  color: var(--title-text-color);
+}
+.lil-gui.root > .children {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.lil-gui.root > .children::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+  height: var(--scrollbar-width);
+  background: var(--background-color);
+}
+.lil-gui.root > .children::-webkit-scrollbar-thumb {
+  border-radius: var(--scrollbar-width);
+  background: var(--focus-color);
+}
+@media (pointer: coarse) {
+  .lil-gui.allow-touch-styles {
+    --widget-height: 28px;
+    --padding: 6px;
+    --spacing: 6px;
+    --font-size: 13px;
+    --input-font-size: 16px;
+    --folder-indent: 10px;
+    --scrollbar-width: 7px;
+    --slider-input-min-width: 50px;
+    --color-input-min-width: 65px;
+  }
+}
+.lil-gui.force-touch-styles {
+  --widget-height: 28px;
+  --padding: 6px;
+  --spacing: 6px;
+  --font-size: 13px;
+  --input-font-size: 16px;
+  --folder-indent: 10px;
+  --scrollbar-width: 7px;
+  --slider-input-min-width: 50px;
+  --color-input-min-width: 65px;
+}
+.lil-gui.autoPlace {
+  max-height: 100%;
+  position: fixed;
+  top: 0;
+  right: 15px;
+  z-index: 1001;
+}
+
+.lil-gui .controller {
+  display: flex;
+  align-items: center;
+  padding: 0 var(--padding);
+  margin: var(--spacing) 0;
+}
+.lil-gui .controller.disabled {
+  opacity: 0.5;
+}
+.lil-gui .controller.disabled, .lil-gui .controller.disabled * {
+  pointer-events: none !important;
+}
+.lil-gui .controller > .name {
+  min-width: var(--name-width);
+  flex-shrink: 0;
+  white-space: pre;
+  padding-right: var(--spacing);
+  line-height: var(--widget-height);
+}
+.lil-gui .controller .widget {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: var(--widget-height);
+}
+.lil-gui .controller.string input {
+  color: var(--string-color);
+}
+.lil-gui .controller.boolean .widget {
+  cursor: pointer;
+}
+.lil-gui .controller.color .display {
+  width: 100%;
+  height: var(--widget-height);
+  border-radius: var(--widget-border-radius);
+  position: relative;
+}
+@media (hover: hover) {
+  .lil-gui .controller.color .display:hover:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    border-radius: var(--widget-border-radius);
+    border: 1px solid #fff9;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+.lil-gui .controller.color input[type=color] {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.lil-gui .controller.color input[type=text] {
+  margin-left: var(--spacing);
+  font-family: var(--font-family-mono);
+  min-width: var(--color-input-min-width);
+  width: var(--color-input-width);
+  flex-shrink: 0;
+}
+.lil-gui .controller.option select {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+}
+.lil-gui .controller.option .display {
+  position: relative;
+  pointer-events: none;
+  border-radius: var(--widget-border-radius);
+  height: var(--widget-height);
+  line-height: var(--widget-height);
+  max-width: 100%;
+  overflow: hidden;
+  word-break: break-all;
+  padding-left: 0.55em;
+  padding-right: 1.75em;
+  background: var(--widget-color);
+}
+@media (hover: hover) {
+  .lil-gui .controller.option .display.focus {
+    background: var(--focus-color);
+  }
+}
+.lil-gui .controller.option .display.active {
+  background: var(--focus-color);
+}
+.lil-gui .controller.option .display:after {
+  font-family: "lil-gui";
+  content: "↕";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding-right: 0.375em;
+}
+.lil-gui .controller.option .widget,
+.lil-gui .controller.option select {
+  cursor: pointer;
+}
+@media (hover: hover) {
+  .lil-gui .controller.option .widget:hover .display {
+    background: var(--hover-color);
+  }
+}
+.lil-gui .controller.number input {
+  color: var(--number-color);
+}
+.lil-gui .controller.number.hasSlider input {
+  margin-left: var(--spacing);
+  width: var(--slider-input-width);
+  min-width: var(--slider-input-min-width);
+  flex-shrink: 0;
+}
+.lil-gui .controller.number .slider {
+  width: 100%;
+  height: var(--widget-height);
+  background-color: var(--widget-color);
+  border-radius: var(--widget-border-radius);
+  padding-right: var(--slider-knob-width);
+  overflow: hidden;
+  cursor: ew-resize;
+  touch-action: pan-y;
+}
+@media (hover: hover) {
+  .lil-gui .controller.number .slider:hover {
+    background-color: var(--hover-color);
+  }
+}
+.lil-gui .controller.number .slider.active {
+  background-color: var(--focus-color);
+}
+.lil-gui .controller.number .slider.active .fill {
+  opacity: 0.95;
+}
+.lil-gui .controller.number .fill {
+  height: 100%;
+  border-right: var(--slider-knob-width) solid var(--number-color);
+  box-sizing: content-box;
+}
+
+.lil-gui-dragging .lil-gui {
+  --hover-color: var(--widget-color);
+}
+.lil-gui-dragging * {
+  cursor: ew-resize !important;
+}
+
+.lil-gui-dragging.lil-gui-vertical * {
+  cursor: ns-resize !important;
+}
+
+.lil-gui .title {
+  --title-height: calc(var(--widget-height) + var(--spacing) * 1.25);
+  height: var(--title-height);
+  line-height: calc(var(--title-height) - 4px);
+  font-weight: 600;
+  padding: 0 var(--padding);
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  outline: none;
+  text-decoration-skip: objects;
+}
+.lil-gui .title:before {
+  font-family: "lil-gui";
+  content: "▾";
+  padding-right: 2px;
+  display: inline-block;
+}
+.lil-gui .title:active {
+  background: var(--title-background-color);
+  opacity: 0.75;
+}
+@media (hover: hover) {
+  body:not(.lil-gui-dragging) .lil-gui .title:hover {
+    background: var(--title-background-color);
+    opacity: 0.85;
+  }
+  .lil-gui .title:focus {
+    text-decoration: underline var(--focus-color);
+  }
+}
+.lil-gui.root > .title:focus {
+  text-decoration: none !important;
+}
+.lil-gui.closed > .title:before {
+  content: "▸";
+}
+.lil-gui.closed > .children {
+  transform: translateY(-7px);
+  opacity: 0;
+}
+.lil-gui.closed:not(.transition) > .children {
+  display: none;
+}
+.lil-gui.transition > .children {
+  transition-duration: 300ms;
+  transition-property: height, opacity, transform;
+  transition-timing-function: cubic-bezier(0.2, 0.6, 0.35, 1);
+  overflow: hidden;
+  pointer-events: none;
+}
+.lil-gui .children:empty:before {
+  content: "Empty";
+  padding: 0 var(--padding);
+  margin: var(--spacing) 0;
+  display: block;
+  height: var(--widget-height);
+  font-style: italic;
+  line-height: var(--widget-height);
+  opacity: 0.5;
+}
+.lil-gui.root > .children > .lil-gui > .title {
+  border: 0 solid var(--widget-color);
+  border-width: 1px 0;
+  transition: border-color 300ms;
+}
+.lil-gui.root > .children > .lil-gui.closed > .title {
+  border-bottom-color: transparent;
+}
+.lil-gui + .controller {
+  border-top: 1px solid var(--widget-color);
+  margin-top: 0;
+  padding-top: var(--spacing);
+}
+.lil-gui .lil-gui .lil-gui > .title {
+  border: none;
+}
+.lil-gui .lil-gui .lil-gui > .children {
+  border: none;
+  margin-left: var(--folder-indent);
+  border-left: 2px solid var(--widget-color);
+}
+.lil-gui .lil-gui .controller {
+  border: none;
+}
+
+.lil-gui input {
+  -webkit-tap-highlight-color: transparent;
+  border: 0;
+  outline: none;
+  font-family: var(--font-family);
+  font-size: var(--input-font-size);
+  border-radius: var(--widget-border-radius);
+  height: var(--widget-height);
+  background: var(--widget-color);
+  color: var(--text-color);
+  width: 100%;
+}
+@media (hover: hover) {
+  .lil-gui input:hover {
+    background: var(--hover-color);
+  }
+  .lil-gui input:active {
+    background: var(--focus-color);
+  }
+}
+.lil-gui input:disabled {
+  opacity: 1;
+}
+.lil-gui input[type=text],
+.lil-gui input[type=number] {
+  padding: var(--widget-padding);
+}
+.lil-gui input[type=text]:focus,
+.lil-gui input[type=number]:focus {
+  background: var(--focus-color);
+}
+.lil-gui input::-webkit-outer-spin-button,
+.lil-gui input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.lil-gui input[type=number] {
+  -moz-appearance: textfield;
+}
+.lil-gui input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  height: var(--checkbox-size);
+  width: var(--checkbox-size);
+  border-radius: var(--widget-border-radius);
+  text-align: center;
+  cursor: pointer;
+}
+.lil-gui input[type=checkbox]:checked:before {
+  font-family: "lil-gui";
+  content: "✓";
+  font-size: var(--checkbox-size);
+  line-height: var(--checkbox-size);
+}
+@media (hover: hover) {
+  .lil-gui input[type=checkbox]:focus {
+    box-shadow: inset 0 0 0 1px var(--focus-color);
+  }
+}
+.lil-gui button {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: var(--text-color);
+  width: 100%;
+  height: var(--widget-height);
+  text-transform: none;
+  background: var(--widget-color);
+  border-radius: var(--widget-border-radius);
+  border: 1px solid var(--widget-color);
+  text-align: center;
+  line-height: calc(var(--widget-height) - 4px);
+}
+@media (hover: hover) {
+  .lil-gui button:hover {
+    background: var(--hover-color);
+    border-color: var(--hover-color);
+  }
+  .lil-gui button:focus {
+    border-color: var(--focus-color);
+  }
+}
+.lil-gui button:active {
+  background: var(--focus-color);
+}
+
+@font-face {
+  font-family: "lil-gui";
+  src: url("data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAAAUsAAsAAAAACJwAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAAH4AAADAImwmYE9TLzIAAAGIAAAAPwAAAGBKqH5SY21hcAAAAcgAAAD0AAACrukyyJBnbHlmAAACvAAAAF8AAACEIZpWH2hlYWQAAAMcAAAAJwAAADZfcj2zaGhlYQAAA0QAAAAYAAAAJAC5AHhobXR4AAADXAAAABAAAABMAZAAAGxvY2EAAANsAAAAFAAAACgCEgIybWF4cAAAA4AAAAAeAAAAIAEfABJuYW1lAAADoAAAASIAAAIK9SUU/XBvc3QAAATEAAAAZgAAAJCTcMc2eJxVjbEOgjAURU+hFRBK1dGRL+ALnAiToyMLEzFpnPz/eAshwSa97517c/MwwJmeB9kwPl+0cf5+uGPZXsqPu4nvZabcSZldZ6kfyWnomFY/eScKqZNWupKJO6kXN3K9uCVoL7iInPr1X5baXs3tjuMqCtzEuagm/AAlzQgPAAB4nGNgYRBlnMDAysDAYM/gBiT5oLQBAwuDJAMDEwMrMwNWEJDmmsJwgCFeXZghBcjlZMgFCzOiKOIFAB71Bb8AeJy1kjFuwkAQRZ+DwRAwBtNQRUGKQ8OdKCAWUhAgKLhIuAsVSpWz5Bbkj3dEgYiUIszqWdpZe+Z7/wB1oCYmIoboiwiLT2WjKl/jscrHfGg/pKdMkyklC5Zs2LEfHYpjcRoPzme9MWWmk3dWbK9ObkWkikOetJ554fWyoEsmdSlt+uR0pCJR34b6t/TVg1SY3sYvdf8vuiKrpyaDXDISiegp17p7579Gp3p++y7HPAiY9pmTibljrr85qSidtlg4+l25GLCaS8e6rRxNBmsnERunKbaOObRz7N72ju5vdAjYpBXHgJylOAVsMseDAPEP8LYoUHicY2BiAAEfhiAGJgZWBgZ7RnFRdnVJELCQlBSRlATJMoLV2DK4glSYs6ubq5vbKrJLSbGrgEmovDuDJVhe3VzcXFwNLCOILB/C4IuQ1xTn5FPilBTj5FPmBAB4WwoqAHicY2BkYGAA4sk1sR/j+W2+MnAzpDBgAyEMQUCSg4EJxAEAwUgFHgB4nGNgZGBgSGFggJMhDIwMqEAYAByHATJ4nGNgAIIUNEwmAABl3AGReJxjYAACIQYlBiMGJ3wQAEcQBEV4nGNgZGBgEGZgY2BiAAEQyQWEDAz/wXwGAAsPATIAAHicXdBNSsNAHAXwl35iA0UQXYnMShfS9GPZA7T7LgIu03SSpkwzYTIt1BN4Ak/gKTyAeCxfw39jZkjymzcvAwmAW/wgwHUEGDb36+jQQ3GXGot79L24jxCP4gHzF/EIr4jEIe7wxhOC3g2TMYy4Q7+Lu/SHuEd/ivt4wJd4wPxbPEKMX3GI5+DJFGaSn4qNzk8mcbKSR6xdXdhSzaOZJGtdapd4vVPbi6rP+cL7TGXOHtXKll4bY1Xl7EGnPtp7Xy2n00zyKLVHfkHBa4IcJ2oD3cgggWvt/V/FbDrUlEUJhTn/0azVWbNTNr0Ens8de1tceK9xZmfB1CPjOmPH4kitmvOubcNpmVTN3oFJyjzCvnmrwhJTzqzVj9jiSX911FjeAAB4nG3HMRKCMBBA0f0giiKi4DU8k0V2GWbIZDOh4PoWWvq6J5V8If9NVNQcaDhyouXMhY4rPTcG7jwYmXhKq8Wz+p762aNaeYXom2n3m2dLTVgsrCgFJ7OTmIkYbwIbC6vIB7WmFfAAAA==") format("woff");
+}</style><link rel="stylesheet" href="./ps4.3.with css added_files/9b36036d13e0625b.css" data-n-g=""><noscript data-n-css=""></noscript><script type="text/javascript" charset="UTF-8" async="" src="./ps4.3.with css added_files/cdreport.js.download"></script><script defer="" nomodule="" src="./ps4.3.with css added_files/polyfills-0d1b80a048d4787e.js.download"></script><script src="./ps4.3.with css added_files/webpack-c05cae0106bff599.js.download" defer=""></script><script src="./ps4.3.with css added_files/framework-ae4f43955bfa5ddc.js.download" defer=""></script><script src="./ps4.3.with css added_files/main-b711949017694707.js.download" defer=""></script><script src="./ps4.3.with css added_files/_app-f6c17ca6eb362931.js.download" defer=""></script><script src="./ps4.3.with css added_files/94726e6d-e3e19cbd43bffaeb.js.download" defer=""></script><script src="./ps4.3.with css added_files/e8ab3f79-7e582ad5fabe9051.js.download" defer=""></script><script src="./ps4.3.with css added_files/608-e4eb2ce8b3dba062.js.download" defer=""></script><script src="./ps4.3.with css added_files/index-1618887269526ec1.js.download" defer=""></script><script src="./ps4.3.with css added_files/_buildManifest.js.download" defer=""></script><script src="./ps4.3.with css added_files/_ssgManifest.js.download" defer=""></script></head><body><div id="__next"><div class="shell" id="shell"><div class="header is-visible"><div class="header__inner"><a href="https://iconmagazine.de/" target="_blank" rel="noreferrer" class="header-logo__icon-link"><img src="./ps4.3.with css added_files/logo-icon.svg" alt="" class="header-logo__icon-logo"></a></div><button class="header-sound"><img src="./ps4.3.with css added_files/sound-on.svg" class="header-sound__icon is-on"><img src="./ps4.3.with css added_files/sound-off.svg" class="header-sound__icon is-off"></button></div><div class="loader-visual is-load-complete" style="--progress: 100%;"><div class="loader-visual__logo"><img src="./ps4.3.with css added_files/icon-presents.svg" width="230" alt=""><img src="./ps4.3.with css added_files/icon-presents.svg" width="230" alt=""></div><div class="loader-visual__start"><button class="loader-visual__button">Start Experience</button></div></div><div class="home" id="scroll-container"><div data-scroll="true" class="sound-manager-trigger" data-id="0"><div class="sound-manager-trigger__inner"></div></div><div class="hero is-init" data-scroll="true" id="hero"><div class="hero__inner"><video class="hero-video" id="hero-video" poster="/assets/videos/opener.mp4.jpg" loop="" muted="" playsinline="" preload="auto" data-debug="false" data-text-block-id="hero-headline" src="/assets/videos/opener.mp4" __idm_id__="8216577"></video><div class="hero-headline" id="hero-headline"><div class="hero-headline__inner"><h5 class="hero-subline">An Experience with Social Media Superstar</h5><h1>Khaby Lame</h1></div><button class="hero-button"><img src="./ps4.3.with css added_files/slider-arrow.svg"></button></div></div></div><div class="intro" data-scroll="true" id="intro"><div class="intro__inner"><div class="intro-headlines js-headline-lines"><h2 class="is-large" style="margin-top:0.3em">NO 1</h2><h2 class="is-large" style="margin-top:0.3em">TikToker</h2><h2 class="is-large" style="margin-top:0.3em">Actor</h2><h2 class="is-large" style="margin-top:0.3em">Icon</h2><h2 class="is-large" style="margin-top:0.3em">ITALIAN</h2><div class="hovering-object js-hovering-object" data-mesh-id="0" data-z="0" data-key="pillar" style="right:-10%;top:10%;width:34%"></div><div class="hovering-object js-hovering-object" data-mesh-id="1" data-z="0.2" data-key="pillar-small" style="left:10%;bottom:-10%;width:20%"></div><div class="hovering-object js-hovering-object" data-mesh-id="2" data-z="-0.6" data-key="rock" style="left:-50%;top:60%;width:24%"></div><div class="hovering-object js-hovering-object" data-mesh-id="5" data-z="-0.5" data-key="pillar-medium" style="right:-80%;top:150%;width:36%"></div></div></div></div><div class="gallery" data-scroll="true" id="gallery-intro"><div class="gallery__inner"><img src="./ps4.3.with css added_files/Khaby-Gallery-01.jpg" class="gallery__image" data-position="0.21,0.0854"><img src="./ps4.3.with css added_files/Khaby-Gallery-02.jpg" class="gallery__image" data-position="0.84,0.98"><img src="./ps4.3.with css added_files/Khaby-Gallery-03.jpg" class="gallery__image" data-position="0.6,0.1"><img src="./ps4.3.with css added_files/Khaby-Gallery-04.jpg" class="gallery__image" data-position="0.96,0.83"><img src="./ps4.3.with css added_files/Khaby-Gallery-05.jpg" class="gallery__image" data-position="0.29,0.2"><img src="./ps4.3.with css added_files/Khaby-Gallery-06.jpg" class="gallery__image" data-position="0.25,0.3"><img src="./ps4.3.with css added_files/Khaby-Gallery-07.jpg" class="gallery__image" data-position="0.84,0.98"></div></div><div class="gallery-ui" data-percent="0"><div class="gallery-ui__element"><div class="gallery-ui__inner"><div class="gallery-ui__images"><div class="gallery-ui__images-inner"><img src="./ps4.3.with css added_files/Khaby-Gallery-01.jpg" class="gallery-ui-thumb"><img src="./ps4.3.with css added_files/Khaby-Gallery-02.jpg" class="gallery-ui-thumb"><img src="./ps4.3.with css added_files/Khaby-Gallery-03.jpg" class="gallery-ui-thumb"><img src="./ps4.3.with css added_files/Khaby-Gallery-04.jpg" class="gallery-ui-thumb"><img src="./ps4.3.with css added_files/Khaby-Gallery-05.jpg" class="gallery-ui-thumb"><img src="./ps4.3.with css added_files/Khaby-Gallery-06.jpg" class="gallery-ui-thumb"><img src="./ps4.3.with css added_files/Khaby-Gallery-07.jpg" class="gallery-ui-thumb"></div></div><div class="gallery-ui-button"><div class="gallery-ui-button__inner"><img src="./ps4.3.with css added_files/icon-drag.svg" class="gallery-ui-button__hand"></div></div></div></div></div><div class="intro-text" data-scroll="true"><div class="intro-text__wrapper"><div class="intro-text-text"><p class="js-text-block">Capitolium, Brescia, Italy</p><p class="js-text-block">He stands for everything that gives us hope: he is young, has a sense of humour, a warm heart and a clear point of view. Khaby is living proof that destiny is something that can be challenged.</p><p class="js-text-block">Khaby Lame, the social media superstar, came to Turin with his parents and four siblings when he was just a year old, leaving Senegal under poor circumstances. During the pandemic, he lost his job and moved back to his parents' folding bed in Chivasso. In March 2020, he uploaded his first videos to TikTok because he wanted to do something: something nice, something that makes people smile. The rest is TikTok history, and Khaby is the undisputed number one. His comedic talent, subtle perspective on everyday madness and open hands are his trademarks. Above all, he is both magical and adorable.</p></div><div class="hovering-object js-hovering-object" data-mesh-id="9" data-z="-0.2" data-key="stone03" style="left:10%;top:-30%;width:8%"></div><div class="hovering-object js-hovering-object" data-mesh-id="2" data-z="-0.4" data-key="stone01" style="right:10%;bottom:10%;width:14%"></div></div></div><div data-scroll="true" class="sound-manager-trigger" data-id="1"><div class="sound-manager-trigger__inner"></div></div><div class="video-block is-background" data-scroll="true" id="video-block"><div class="video-block__divider"><svg height="200" width="200" style="transform:translateY(-1px)" viewBox="0 0 200 200" preserveAspectRatio="none"><polygon points="0,0 200,0 200,200" style="fill:black"></polygon></svg></div><div class="video-block__video"><video id="video-block" poster="/assets/videos/khaby-main.mp4.jpg" loop="" muted="" playsinline="" preload="auto" data-debug="false" src="/assets/videos/khaby-main.mp4" __idm_id__="8216579"></video></div></div><div data-scroll="true" class="sound-manager-trigger" data-id="2"><div class="sound-manager-trigger__inner"></div></div><div class="interview-container" data-scroll="true"><div class="interview-intro"><h3 class="interview-intro__headline js-text-block" data-headline="true" data-dark="true" data-type="scale-up">4 Questions <br> 4 Answers<div class="hovering-object js-hovering-object" data-mesh-id="4" data-z="0.3" data-key="pillar-combo" style="left:0;right:0;top:-100%;width:50%"></div><div class="hovering-object js-hovering-object" data-mesh-id="1" data-z="-0.5" data-key="pillar-piece" style="left:-30%;top:120%;width:26%"></div></h3></div><div class="interview" id="interview-1"><div class="interview__wrapper"><div class="interview__inner"><div class="interview-question js-interview-question"><h2 data-debug="false" style="margin-top: 0.1em;">When the internet</h2><h2 data-debug="true" style="margin-top: 0.1em;">breaks down, how </h2><h2 data-debug="false" style="margin-top: 0.1em;">do you react?</h2></div><div class="interview-video"><video class="interview-video__video js-interview-video" id="interview-video-1" poster="/assets/videos/internet-breakdown.mp4.jpg" loop="" muted="" playsinline="" preload="auto" data-debug="true" src="/assets/videos/internet-breakdown.mp4" __idm_id__="8216578"></video></div><div class="hovering-object js-hovering-object" data-mesh-id="2" data-z="-0.1" data-key="stone01" style="right:10%;bottom:40%;width:10%"></div></div></div></div><div class="interview is-reverse" id="interview-2"><div class="interview__wrapper"><div class="interview__inner"><div class="interview-question js-interview-question" data-reverse="true"><h2 data-debug="false" style="margin-top: 0.1em;">Your childhood</h2><h2 data-debug="true" style="margin-top: 0.1em;">dream job?</h2></div><div class="interview-video"><video class="interview-video__video js-interview-video" id="interview-video-2" poster="/assets/videos/dreamjob.mp4.jpg" loop="" muted="" playsinline="" preload="auto" data-debug="false" src="/assets/videos/dreamjob.mp4" __idm_id__="8216581"></video></div><div class="hovering-object js-hovering-object" data-mesh-id="5" data-z="-0.1" data-key="pillar" style="left:10%;top:20%;width:13%"></div></div></div></div><div class="interview" id="interview-3"><div class="interview__wrapper"><div class="interview__inner"><div class="interview-question js-interview-question"><h2 data-debug="false" style="margin-top: 0.1em;">What are your </h2><h2 data-debug="true" style="margin-top: 0.1em;">favorite Italian</h2><h2 data-debug="false" style="margin-top: 0.1em;">gestures?</h2></div><div class="interview-video"><video class="interview-video__video js-interview-video" id="interview-video-3" poster="/assets/videos/italian-gestures.mp4.jpg" loop="" muted="" playsinline="" preload="auto" data-debug="false" src="/assets/videos/italian-gestures.mp4" __idm_id__="8216582"></video></div><div class="hovering-object js-hovering-object" data-mesh-id="10" data-z="-0.4" data-key="stone01" style="right:20%;bottom:25%;width:7%"></div><div class="hovering-object js-hovering-object" data-mesh-id="1" data-z="-0.2" data-key="stone01" style="right:24%;bottom:40%;width:9%"></div></div></div></div><div class="interview is-reverse" id="interview-4"><div class="interview__wrapper"><div class="interview__inner"><div class="interview-question js-interview-question" data-reverse="true"><h2 data-debug="false" style="margin-top: 0.1em;">How often are </h2><h2 data-debug="true" style="margin-top: 0.1em;">you looking at</h2><h2 data-debug="false" style="margin-top: 0.1em;">your phone?</h2></div><div class="interview-video"><video class="interview-video__video js-interview-video" id="interview-video-4" poster="/assets/videos/phone.mp4.jpg" loop="" muted="" playsinline="" preload="auto" data-debug="false" src="/assets/videos/phone.mp4" __idm_id__="8216580"></video></div><div class="hovering-object js-hovering-object" data-mesh-id="0" data-z="0" data-key="stone01" style="left:20%;bottom:25%;width:12%"></div></div></div></div></div><div class="like-bar" id="like-bar"><div class="like-bar-el"><button class="like-bar-el__button"><img src="./ps4.3.with css added_files/icon-like.svg" style="width:54%"></button><button class="like-bar-el__button"><img src="./ps4.3.with css added_files/icon-heart.svg" style="width:54%"></button><button class="like-bar-el__button"><img src="./ps4.3.with css added_files/icon-hot.svg" style="width:48%"></button></div></div><div class="interview-outro" data-scroll="true"><div class="interview-outro__wrapper"><div class="interview-outro-emojis js-emoji-fire"></div><div class="interview-outro__textblock" data-headline="true">"I chose the language of gestures and expressions because they are
+          universal"</div></div></div><div data-scroll="true" class="sound-manager-trigger" data-id="3"><div class="sound-manager-trigger__inner"></div></div><div class="image-block"><div class="image-block__item" data-scroll="true"><img src="./ps4.3.with css added_files/closeup.jpg"></div><div class="image-block__item" data-scroll="true"><img src="./ps4.3.with css added_files/hands.jpg"></div><div class="image-block__item" data-scroll="true"><img src="./ps4.3.with css added_files/fight.jpg"></div></div><div class="quote" data-scroll="true"><div class="quote__wrapper"><div class="quote-upper"><div class="quote-upper__spacer"></div><div class="quote-quote"><div class="quote-quote__inner">"I worked in a factory, then, i was fired. And now?
+ I am proof, that any goal can be achieved with passion and determination."</div><div class="hovering-object js-quote-hovering" data-mesh-id="1" data-z="-0.3" data-key="pillar-small" style="left:-30%;top:24%;width:12%"></div><div class="hovering-object js-quote-hovering" data-mesh-id="10" data-z="0.4" data-key="stone-left-bottom" style="left:35%;bottom:15%;width:7%"></div><div class="hovering-object js-quote-hovering" data-mesh-id="5" data-z="-0.5" data-key="pillar-medium" style="right:-60%;bottom:10%;width:25%"></div><div class="hovering-object js-quote-hovering" data-mesh-id="2" data-z="0.4" data-key="top-center" style="right:40%;top:10%;width:7%"></div><div class="hovering-object js-quote-hovering" data-mesh-id="9" data-z="-0.4" data-key="top-center-left" style="left:20%;top:14%;width:8%"></div><div class="hovering-object js-quote-hovering" data-mesh-id="1" data-z="-0.8" data-key="bottom-left" style="right:-15%;bottom:-10%;width:14%"></div><div class="hovering-object js-quote-hovering" data-mesh-id="10" data-z="0.2" data-key="little-top-left" style="left:14%;top:6%;width:6%"></div></div><div class="quote-pedestal"></div></div><div class="quote-lower"></div></div></div><div data-scroll="true" class="sound-manager-trigger" data-id="4"><div class="sound-manager-trigger__inner"></div></div><div class="gallery" data-scroll="true" id="gallery-closing"><div class="gallery__inner"><img src="./ps4.3.with css added_files/Khaby-Gallery-11.jpg" class="gallery__image" data-position="0.21,0.0854"><img src="./ps4.3.with css added_files/Khaby-Gallery-12.jpg" class="gallery__image" data-position="0.84,0.98"><img src="./ps4.3.with css added_files/Khaby-Gallery-13.jpg" class="gallery__image" data-position="0.6,0.1"><img src="./ps4.3.with css added_files/Khaby-Gallery-14.jpg" class="gallery__image" data-position="0.96,0.83"><img src="./ps4.3.with css added_files/Khaby-Gallery-15.jpg" class="gallery__image" data-position="0.29,0.2"><img src="./ps4.3.with css added_files/Khaby-Gallery-16.jpg" class="gallery__image" data-position="0.25,0.8"><img src="./ps4.3.with css added_files/Khaby-Gallery-17.jpg" class="gallery__image"></div></div><div class="gallery-ui" data-percent="0"><div class="gallery-ui__element"><div class="gallery-ui__inner"><div class="gallery-ui__images"><div class="gallery-ui__images-inner"><img src="./ps4.3.with css added_files/Khaby-Gallery-11.jpg" class="gallery-ui-thumb"><img src="./ps4.3.with css added_files/Khaby-Gallery-12.jpg" class="gallery-ui-thumb"><img src="./ps4.3.with css added_files/Khaby-Gallery-13.jpg" class="gallery-ui-thumb"><img src="./ps4.3.with css added_files/Khaby-Gallery-14.jpg" class="gallery-ui-thumb"><img src="./ps4.3.with css added_files/Khaby-Gallery-15.jpg" class="gallery-ui-thumb"><img src="./ps4.3.with css added_files/Khaby-Gallery-16.jpg" class="gallery-ui-thumb"><img src="./ps4.3.with css added_files/Khaby-Gallery-17.jpg" class="gallery-ui-thumb"></div></div><div class="gallery-ui-button"><div class="gallery-ui-button__inner"><img src="./ps4.3.with css added_files/icon-drag.svg" class="gallery-ui-button__hand"></div></div></div></div></div><div class="video-block" data-scroll="true" id="video-block-2"><div class="video-block__video"><video id="video-block" poster="/assets/videos/video-unten.mp4.jpg" loop="" muted="" playsinline="" preload="auto" data-debug="false" src="/assets/videos/video-unten.mp4" __idm_id__="8216583"></video></div></div><canvas class="home-stage" id="home-canvas" data-engine="three.js r142" width="187" height="880" style="width: 150px; height: 704px;"></canvas><div class="footer" data-scroll="true"><div class="footer-links"><a href="https://iconmagazine.de/story/mit-khaby-lame-im-interview/" class="footer-links__link" rel="noreferrer" target="_blank">Read Full Interview</a><a href="https://www.instagram.com/icon.magazin/" class="footer-links__link" rel="noreferrer" target="_blank">Icon Instagram</a><a href="https://iconmagazine.de/story/khabys-boss-looks/" class="footer-links__link" rel="noreferrer" target="_blank">Khabys' Look</a></div><div class="footer-image"><img src="./ps4.3.with css added_files/closing.png"></div><div class="footer-credits"><div class="footer-credits__item"><span>ICON DIGITAL</span><span>Sara Krüger</span></div><div class="footer-credits__item"><span>SOUND DESIGN</span><span>Lina Dörsam</span></div><div class="footer-credits__item"><span>Photo</span><span><a href="https://www.stefanogaluzzi.com/" target="_blank" rel="noreferrer">Stefano Galuzzi</a></span></div><div class="footer-credits__item"><span>Camera</span><span><a href="https://www.twoshot.it/" target="_blank" rel="noreferrer">twoshot</a></span></div><div class="footer-credits__item"><span>STYLING</span><span>Silja Lange</span></div><div class="footer-credits__item"><span>Cut &amp; Grading</span><span>Julia Crescitelli</span></div><div class="footer-credits__item"><span>Creative Direction</span><span><a href="http://dirkkoenig.com/" target="_blank" rel="noreferrer">Dirk König</a></span></div><div class="footer-credits__item"><span>Art Direction</span><span><a href="https://www.lisamfessl.com/" target="_blank" rel="noreferrer">Lisa Maria Fessl</a></span></div><div class="footer-credits__item"><span>Creative Coding</span><span><a href="https://www.rocani.studio/" target="_blank" rel="noreferrer">Rocani Studio</a></span></div></div><div class="footer-legal"><a href="https://iconmagazine.de/impressum/" class="footer-legal__link" rel="noreferrer" target="_blank">Imprint</a><a href="https://iconmagazine.de/datenschutz/" class="footer-legal__link" rel="noreferrer" target="_blank">Privacy Policy</a></div></div></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"gvNQc3R157OgSTei8b8qx","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script><div>Error: The domain KHABY.ROCANI.CO is not authorized to show the cookie declaration for domain group ID 7a11d0a8-87b7-4ab0-acab-636523004992. Please add it to the domain group in the Cookiebot Manager to authorize the domain.</div><script src="./ps4.3.with css added_files/cd.js.download" id="CookieDeclaration" type="text/javascript" async="true" data-nscript="afterInteractive"></script><next-route-announcer><p aria-live="assertive" id="__next-route-announcer__" role="alert" style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; overflow-wrap: normal;"></p></next-route-announcer><div class="lil-gui allow-touch-styles root autoPlace" style="display: none;"><div class="title" role="button" aria-expanded="true" tabindex="0">Controls</div><div class="children"><div class="lil-gui allow-touch-styles closed"><div class="title" role="button" aria-expanded="false" tabindex="0">Camera</div><div class="children"><div class="controller number hasSlider"><div class="name" id="lil-gui-name-1">x</div><div class="widget"><div class="slider"><div class="fill" style="width: 50%;"></div></div><input type="number" step="any" aria-labelledby="lil-gui-name-1"></div></div><div class="controller number hasSlider"><div class="name" id="lil-gui-name-2">y</div><div class="widget"><div class="slider"><div class="fill" style="width: 50%;"></div></div><input type="number" step="any" aria-labelledby="lil-gui-name-2"></div></div><div class="controller number hasSlider"><div class="name" id="lil-gui-name-3">z</div><div class="widget"><div class="slider"><div class="fill" style="width: 80%;"></div></div><input type="number" step="any" aria-labelledby="lil-gui-name-3"></div></div></div></div></div></div></body></html>

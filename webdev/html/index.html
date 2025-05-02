@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="style.css" </link> -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <title>Document</title>
     <style>
         /* Style only table2 using class */
@@ -18,38 +17,120 @@
             border-radius: 12px;
             overflow: hidden;
         }
-    
+
         .fancy-table thead {
             background: linear-gradient(90deg, #ff6a00, #ee0979);
             color: white;
             font-size: 18px;
             text-transform: uppercase;
         }
-    
+
         .fancy-table thead th {
             padding: 16px;
         }
-    
+
         .fancy-table tbody tr {
             border-bottom: 1px solid #ddd;
             transition: background 0.3s;
         }
-    
+
         .fancy-table tbody tr:hover {
-            background-color: #f9f9f9;
+            background-color: #e0e0e0;
         }
-    
+
+
         .fancy-table td {
             text-align: center;
             padding: 14px;
             font-size: 16px;
         }
-    
-        .fancy-table tbody tr:nth-child(even) {
+
+        .fancy-table tbody tr:nth-child() {
             background-color: #f2f2f2;
         }
     </style>
+    <style>
+        .style-forms {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            font-family: 'Segoe UI', sans-serif;
+        }
         
+        .style-forms div {
+            margin-bottom: 20px;
+        }
+        
+        .style-forms label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #333;
+        }
+        
+        .style-forms input,
+        .style-forms select,
+        .style-forms textarea {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+            transition: border-color 0.3s ease;
+        }
+        
+        .style-forms input:focus,
+        .style-forms select:focus,
+        .style-forms textarea:focus {
+            outline: none;
+            border-color: #ff6a00;
+            box-shadow: 0 0 5px rgba(255, 106, 0, 0.3);
+        }
+        
+        .style-forms textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        
+        .style-forms p {
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #444;
+        }
+        
+        .style-forms input[type="radio"],
+        .style-forms input[type="checkbox"] {
+            width: auto;
+            margin-right: 6px;
+        }
+        
+        .style-forms a {
+            color: #ff6a00;
+            text-decoration: underline;
+        }
+        
+        .style-forms button {
+            background: linear-gradient(90deg, #ff6a00, #ee0979);
+            border: none;
+            padding: 12px 25px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .style-forms button:hover {
+            background: linear-gradient(90deg, #ee0979, #ff6a00);
+        }
+        
+    </style>
+
+
 </head>
 
 <body>
@@ -64,7 +145,6 @@
     <h6> this is heading 6</h6>
     <button onclick="clickme()">click me</button>
     <h2>some images . . . </h2>
-    <h2>images of anime</h2>
     <img src="https://images.pexels.com/photos/679997/pexels-photo-679997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         alt="lotus image" height="420">
     <h2>local images</h2>
@@ -138,7 +218,8 @@
 
 
     <!-- navigation -->
-    <nav> <a href="/home">home</a>
+    <nav>
+        <a href="/home">home</a>
         <!-- to go inside a folder for a file we can use /foldername/filename or foldername/filename -->
         <a href="/pages/about.html" target="_blank"> about us </a>
         <a href="/bottom"> bottom</a>
@@ -149,7 +230,7 @@
 
 
     <!-- chapter 4 -->
-    chapter 4
+    <h1>chapter 4</h1>
     <hr>
     <div>list in html </div>
     <p>we have list in htmls, li stands for list item, ordered list as ol, unordered list as ul, below are some examples
@@ -210,12 +291,17 @@
                 <td>18</td>
                 <td>18942</td>
             </tr>
+            <tr>
+                <td>thank</td>
+                <td colspan="2">you</td>
+            </tr>
         </tbody>
     </table>
     <!-- table2 -->
 
+    <h1>after adding some nice css in table</h1>
     <table class="fancy-table">
-        <thead>table example with css
+        <thead>
             <tr>
                 <th>name</th>
                 <th>age</th>
@@ -238,8 +324,145 @@
                 <td>18</td>
                 <td>18942</td>
             </tr>
+            <tr>
+                <td>thank</td>
+                <td colspan="2">you</td>
+            </tr>
         </tbody>
     </table>
+
+    
+    <hr>
+    <h1>forms in html</h1>
+    <hr>
+    <div>
+        <label for="name">name</label>
+        <input id="name" type="nametext" placeholder="enter name here" required>
+    </div>
+    <div>
+        <label for="age">age</label>
+        <input id="age" placeholder="enter your age" required>
+    </div>
+    <div>
+        <label for="number">phone number</label>
+        <input id="number" type="tel" placeholder="enter phone no" required>
+    </div>
+    <div>
+        <label for="email">email</label>
+        <input type="email" placeholder="enter your email" required>
+    </div>
+    <div>
+        <label for="passowrd">password</label>
+        <input id="password" type="password" placeholder="enter you password" required>
+    </div>
+    <div>
+        <label for="dob">date of birth</label>
+        <input id="dob" type="date" placeholder="date of birth" required="true">
+        <!-- required or required="true" or required="false" all are correct, generally we type only required -->
+    </div>
+    <div>
+        <label for="gender">select gender</label>
+        <select name="gender" id="gender" required>
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="others">other</option>
+        </select>
+    </div>
+    <div>
+        <p>our subscription plans</p>
+        <input type="radio" name="subscription" value="basic">
+        <label for="basic">basic</label>
+        <input type="radio" name="subscription" value="premium">
+        <label for="premium">premium</label>
+        <input type="radio" name="subscription" value="vip">
+        <label for="vip"> vip</label>
+        <input type="radio" name="differentname" value="different">
+        <label for="different">radio button will not switch</label>
+    </div>
+    <div>
+        <input id="terms" type="checkbox">accept terms and conditions, follow this link <a href="/terms.html"
+            target="_blank">click here</a>
+    </div>
+    <div>
+        <p><label for="123">please, enter some comments</label></p>
+        <textarea name="comments" id="123" placeholder="write here . . ."></textarea>
+    </div>
+    <div>
+        <button>submit</button>
+    </div>
+    <h1> after adding some css</h1>
+    <form action="/submit.php" class="style-forms">
+        <div>
+            <label for="name">name</label>
+            <input id="name" type="nametext" placeholder="enter name here" required>
+        </div>
+        <div>
+            <label for="age">age</label>
+            <input id="age" placeholder="enter your age" required>
+        </div>
+        <div>
+            <label for="number">phone number</label>
+            <input id="number" type="tel" placeholder="enter phone no" required>
+        </div>
+        <div>
+            <label for="email">email</label>
+            <input type="email" placeholder="enter your email" required>
+        </div>
+        <div>
+            <label for="passowrd">password</label>
+            <input id="password" type="password" placeholder="enter you password" required>
+        </div>
+        <div>
+            <label for="dob">date of birth</label>
+            <input id="dob" type="date" placeholder="date of birth" required="true">
+            <!-- required or required="true" or required="false" all are correct, generally we type only required -->
+        </div>
+        <div>
+            <label for="gender">select gender</label>
+            <select name="gender" id="gender" required>
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="others">other</option>
+            </select>
+        </div>
+        <div>
+            <p>our subscription plans</p>
+            <input type="radio" name="subscription" value="basic">
+            <label for="basic">basic</label>
+            <input type="radio" name="subscription" value="premium">
+            <label for="premium">premium</label>
+            <input type="radio" name="subscription" value="vip">
+            <label for="vip"> vip</label>
+            <input type="radio" name="differentname" value="different">
+            <label for="different">radio button will not switch</label>
+        </div>
+        <div>
+            <input id="terms" type="checkbox">accept terms and conditions, follow this link <a href="/terms.html"
+                target="_blank">click here</a>
+        </div>
+        <div>
+            <p><label for="123">please, enter some comments</label></p>
+            <textarea name="comments" id="123" placeholder="write here . . ."></textarea>
+        </div>
+        <div>
+            <button>submit</button>
+        </div>
+    </form>
+
+    <h3>videos in html</h3>
+        <p>some tags like : controls, muted, width, height, loop</p>
+    <div>
+        <video src="Free Fire MAX 2025-01-26 12-03-00.mp4" controls autoplay muted width="800" height="480" loop>sorry unable to play</video>
+        <!-- we muted the video because its a type of safety feature like enter to library, and your video plays at full volme -->
+         <!-- also browsers dosen't allow us to auto play video in sound on, so to play video in such browser we use muted  -->
+    </div>
+
+    <div>
+        <h2>without loop</h2>
+        <video src="Free Fire MAX 2025-01-26 12-03-00.mp4" preload="auto" controls autoplay muted width="800" height="480" >sorry unable to play</video>
+        <!-- we muted the video because its a type of safety feature like enter to library, and your video plays at full volme -->
+         <!-- also browsers dosen't allow us to auto play video in sound on, so to play video in such browser we use muted  -->
+    </div>
 
 
 

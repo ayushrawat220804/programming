@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Problem 4.4</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f0f2f5;
+    }
+
+    header, footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #4a90e2;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    main {
+      margin-top: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    thead {
+      background-color: #4a90e2;
+      color: white;
+    }
+
+    thead th {
+      padding: 12px;
+      text-align: left;
+      font-size: 18px;
+    }
+
+    tbody tr {
+      border-bottom: 1px solid #ddd;
+    }
+
+    tbody tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    tbody td {
+      padding: 12px;
+      font-size: 16px;
+    }
+
+    /* Responsive Table */
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tbody tr {
+        margin-bottom: 15px;
+      }
+
+      tbody td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+      }
+
+      tbody td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    Student Details
+  </header>
+
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>College</th>
+          <th>CGPA</th>
+          <th>Description</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Name">Karan Dhyani</td>
+          <td data-label="College">IIT Roorkee</td>
+          <td data-label="CGPA">9 / 10</td>
+          <td data-label="Description">Good in academics</td>
+          <td data-label="Grade">A</td>
+        </tr>
+        <tr>
+          <td data-label="Name">Ayush Rawat</td>
+          <td data-label="College">IIT Bombay</td>
+          <td data-label="CGPA">9 / 10</td>
+          <td data-label="Description">Good in techs</td>
+          <td data-label="Grade">A+</td>
+        </tr>
+        <tr>
+          <td data-label="Name">Kanishk</td>
+          <td data-label="College">IIT Patna</td>
+          <td data-label="CGPA">9.6 / 10</td>
+          <td data-label="Description">Good in academics</td>
+          <td data-label="Grade">A+</td>
+        </tr>
+        <tr>
+          <td data-label="Name">Abhishek Bhatt</td>
+          <td data-label="College">IIT Kanpur</td>
+          <td data-label="CGPA">7 / 10</td>
+          <td data-label="Description">Good in designs</td>
+          <td data-label="Grade">B+</td>
+        </tr>
+        <tr>
+          <td data-label="Name">Shivam Bisht</td>
+          <td data-label="College">IIT Delhi</td>
+          <td data-label="CGPA">8 / 10</td>
+          <td data-label="Description">Good in GK</td>
+          <td data-label="Grade">A+</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    © 2025 All Rights Reserved
+  </footer>
+
+</body>
+
+</html>

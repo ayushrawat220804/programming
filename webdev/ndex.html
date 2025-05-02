@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this page contains details about html tags, how to use them">
+
+    <title>Html tags</title>
+</head>
+
+<body>
+    <header>
+        <h1>basic tags in html</h1>
+        <a href="/home.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+    </header>
+
+    <main>
+        <div>
+            <h2>headings in html</h2>
+            <p>in html we have heading from <b>h1</b>to <b>h6</b> example below:</p>
+            <h1>this is heading h1</h1>
+            <h2>this is heading h2</h2>
+            <h3>this is heading h3</h3>
+            <h4>this is heading h4</h4>
+            <h5>this is heading h5</h5>
+            <h6>this is heading h6</h6>
+        </div>
+        <div>
+            <h2>paragraphs in html</h2>
+            <p>we have &lt;p&gt; and &lt;/p&gt; tag for write our content in paragraph format</p>
+            <p>eg : this is a paragraph inside &lt;p&gt; tag</p>
+            <p>in paragraphs we also have <b>&lt;pre&gt;</b></b>tag which helps us to show and display the extra spaces
+            </p>
+            <p>eg :
+            <pre>this        is 
+
+                a text 
+                inside pre 
+                tag , 
+                as you can see we have several line gaps
+            </pre>
+            </p>
+        </div>
+        <div>
+            <h2>Bold Italic and Underline in html</h2>
+            <p>we use <b>&lt;b&gt;</b> to get bold text eg : </b><b>this is bold text</b></p>
+            <p>we use <b>&lt;i&gt;</b> to get italic text eg : <i>this is italic text</i></p>
+            <p>we use <b>&lt;u&gt;</b> to get underline text eg : <u>this is underline text</u></p>
+        </div>
+        <div>
+            <h2>line breaks in html</h2>
+            <p>we can do line breaks using <b>&lt;br&gt;</b>, a horizontal line break using <b>&lt;hr&gt;</b></p>
+            <p>below is a line break using <b>&lt;br&gt;</b> tag <br></p>
+            <p>and below this is a horizontal line break using <b>&lt;hr&gt;</b>
+                <hr>
+            </p>
+        </div>
+        <div>
+            <h2>Subscript and Superscript in html</h2>
+            <p>we use subscript or superscript specially to write chemistry formulas <br> eg : Carbon Dioxide as -
+                <b>CO<sub>2</sub></b>, Oxygen as <b>O<sub>2</sub></b> and many more.
+            </p>
+            <p>we can also use these in grades <br>eg : <b>9<sup>th</sup></b> class, <b>10<sup>th</sup></b> Class</p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div>
+            <h2>Images in html</h2>
+            <p>in html we can add <b>images</b> using <b>img </b> tag</p>
+            <p>example on adding a img tag :
+                <span><code>&lt;img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image1" width="400"&gt;</code>
+            </p></span>
+            <p>here <b>src </b>means source / desitinatino of that particular image</p>
+            <p>in this case
+                <b>https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D</b>
+                is the source for that particular image
+            </p>
+            <p><b>alt</b> helps us to find that particular name in a shorter way , in this case image1 is alternat text
+            </p>
+            <p><b>width</b> this helps to add width to a particular image , by adding <b>width</b> img automatically
+                choose its desired <b>height </b>to make the image look in perfect fit</p>
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="image1" width="400">
+        </div>
+        <div>
+            <h2>video tags in html</h2>
+            <p>in html we have several video tags , below are some </p>
+            <p><b>video</b> tag is used to use video / media queries in html </p>
+            <p><b>control</b> provides controls to a video , eg : play , pause , forward, backword etc</p>
+            <p><b>loop</b> loop the video , automatically plays after the video ends</p>
+            <p><b>muted</b> automatically mute the video , good for better user experience</p>
+            <p><b>autoplay</b> autoplays the video after website refreshes</p>
+            <p><b>preload</b> preloads the video , we have <b>auto</b>, <b>meta</b>, and <b>none</b></p>
+            <p><b>error</b> is nothing , but if any case video can't able to play , then instead of video this error
+                message will display</p>
+            <p>below example of a video</p>
+            <p><code>            &lt;video src="alu.mp4" controls loop autoplay muted width="600" &gt;error&lt;/video&gt;</p>
+            </code>
+                <video src="alu.mp4" controls loop autoplay muted preload="auto" width="600">error</video>
+        </div>
+        <h2>forms in html</h2>
+        <p>in html forms are necessary to take data from the user eg their name, age, password, etc, below is an example
+            of froms in html </p>
+
+
+
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer>&copy; All Right Reseved | 2025 | HTML Basics</footer>
+
+</body>
+
+</html>

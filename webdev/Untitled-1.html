@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Comprehensive Reference Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <h1><strong>HTML5 Comprehensive Reference Guide</strong></h1>
+  <p>Overview: This document demonstrates nearly every HTML5 element and structure, explaining its purpose and
+    attributes.</p>
+
+  <header>
+    <h2><strong>Website Title</strong></h2>
+    <p>Welcome to the HTML5 tutorial and reference.</p>
+    <nav>
+      <ul>
+        <li><a href="#structural-elements">Structural Elements</a></li>
+        <li><a href="#text-content">Text Content</a></li>
+        <li><a href="#lists">Lists</a></li>
+        <li><a href="#tables">Tables</a></li>
+        <li><a href="#forms">Forms</a></li>
+        <li><a href="#multimedia">Multimedia/Embedded</a></li>
+        <li><a href="#images">Images &amp; Graphics</a></li>
+        <li><a href="#interactive">Interactive/Metadata</a></li>
+        <li><a href="#webcomponents">Web Components</a></li>
+        <li><a href="#deprecated">Deprecated</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <hr>
+
+  <main>
+
+    <!-- Structural Elements -->
+    <section id="structural-elements">
+      <h2><strong>Semantic Structural Elements</strong></h2>
+
+      <!-- header -->
+      <h3>&lt;header&gt;</h3>
+      <p><code>&lt;header&gt;…&lt;/header&gt;</code> defines introductory content or navigation.</p>
+      <header>
+        <h4>Site Header Example</h4>
+        <p>This header could include branding or introductory info.</p>
+      </header>
+      <br>
+
+      <!-- nav -->
+      <h3>&lt;nav&gt;</h3>
+      <p><code>&lt;nav&gt;…&lt;/nav&gt;</code> represents a section of navigation links.</p>
+      <nav>
+        <ul>
+          <li><a href="#text-content">Go to Text Content</a></li>
+          <li><a href="#forms">Go to Forms</a></li>
+        </ul>
+      </nav>
+      <br>
+
+      <!-- article -->
+      <h3>&lt;article&gt;</h3>
+      <p><code>&lt;article&gt;…&lt;/article&gt;</code> represents a self-contained composition.</p>
+      <article>
+        <h4>Article Title</h4>
+        <p>This is an example of an article. It might contain a blog post or news story.</p>
+        <section>
+          <h5>Article Section</h5>
+          <p>Sections within an article group related content.</p>
+        </section>
+        <footer>
+          <p>Article Footer: Written by Author Name on <time datetime="2025-04-29">April 29, 2025</time>.</p>
+        </footer>
+      </article>
+      <br>
+
+      <!-- section -->
+      <h3>&lt;section&gt;</h3>
+      <p><code>&lt;section&gt;…&lt;/section&gt;</code> groups thematic content.</p>
+      <section>
+        <h4>Example Section</h4>
+        <p>This section could be part of an article or main content. It helps structure content.</p>
+      </section>
+      <br>
+
+      <!-- aside -->
+      <h3>&lt;aside&gt;</h3>
+      <p><code>&lt;aside&gt;…&lt;/aside&gt;</code> contains tangential content.</p>
+      <aside>
+        <p><strong>Related:</strong> This aside is tangential to the content. It could contain links or information not
+          essential to the main topic.</p>
+      </aside>
+      <br>
+
+      <!-- address -->
+      <h3>&lt;address&gt;</h3>
+      <p><code>&lt;address&gt;…&lt;/address&gt;</code> provides contact information.</p>
+      <address>
+        Contact us at <a href="mailto:example@example.com">example@example.com</a>.
+      </address>
+      <br>
+
+      <!-- footer -->
+      <h3>&lt;footer&gt;</h3>
+      <p><code>&lt;footer&gt;…&lt;/footer&gt;</code> defines footer content.</p>
+      <footer>
+        <p>&copy; 2025 Example Corp. All rights reserved.</p>
+      </footer>
+    </section>
+
+    <hr>
+
+    <!-- Text Content Elements -->
+    <section id="text-content">
+      <h2><strong>Text Content Elements</strong></h2>
+
+      <h3>Headings</h3>
+      <p><code>&lt;h1&gt;…&lt;/h1&gt; through &lt;h6&gt;…&lt;/h6&gt;</code> define six levels of headings.</p>
+      <h1>Heading Level 1</h1>
+      <h2>Heading Level 2</h2>
+      <h3>Heading Level 3</h3>
+      <br>
+
+      <h3>Paragraph &lt;p&gt;</h3>
+      <p><code>&lt;p&gt;…&lt;/p&gt;</code> defines a paragraph block.</p>
+      <p>This is an example paragraph demonstrating the <code>&lt;p&gt;</code> tag. It contains text content and will
+        appear as a block.</p>
+      <br>
+
+      <h3>Blockquote &lt;blockquote&gt;</h3>
+      <blockquote cite="https://example.com">
+        <p>A block quotation example from another source.</p>
+      </blockquote>
+      <br>
+
+      <h3>Preformatted &lt;pre&gt; + Inline &lt;code&gt;</h3>
+      <pre><code>let x = 10;
+console.log(x); // Preformatted code block
+</code></pre>
+    </section>
+
+    <hr>
+
+    <!-- Lists -->
+    <section id="lists">
+      <h2><strong>Lists</strong></h2>
+
+      <h3>Unordered List &lt;ul&gt;</h3>
+      <ul>
+        <li>First item (unordered)</li>
+        <li>Second item</li>
+      </ul>
+      <br>
+
+      <h3>Ordered List &lt;ol&gt;</h3>
+      <ol>
+        <li>First item (ordered)</li>
+        <li>Second item</li>
+      </ol>
+      <br>
+
+      <h3>Description List &lt;dl&gt;</h3>
+      <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+      </dl>
+    </section>
+
+    <hr>
+
+    <!-- Tables -->
+    <section id="tables">
+      <h2><strong>Tables</strong></h2>
+
+      <table>
+        <caption>Example Data Table</caption>
+        <colgroup>
+          <col>
+          <col>
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+          </tr>
+          <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Footer 1</td>
+            <td>Footer 2</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <hr>
+
+    <!-- Forms -->
+    <section id="forms">
+      <h2><strong>Forms</strong></h2>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required><br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"><br><br>
+
+          <label for="bday">Birthday:</label>
+          <input type="date" id="bday" name="bday"><br><br>
+
+          <label for="file">Upload file:</label>
+          <input type="file" id="file" name="file"><br><br>
+
+          <label for="comments">Comments:</label><br>
+          <textarea id="comments" name="comments" rows="3" cols="30"></textarea><br><br>
+
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <hr>
+
+    <!-- Multimedia/Embedded -->
+    <section id="multimedia">
+      <h2><strong>Audio, Video, and Embeds</strong></h2>
+
+      <audio controls>
+        <source src="https://archive.org/download/apple-iic-plus-beep/Apple%20IIc%20Plus%20beep.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <br><br>
+
+      <video width="480" height="270" controls autoplay muted loop preload="metadata">
+        <source src="https://archive.org/download/BigBuckBunny_328/BigBuckBunny_512kb.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+      <br><br>
+
+      <iframe src="https://www.wikipedia.org" title="Wikipedia" width="400" height="200"></iframe>
+      <br><br>
+
+      <embed src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" type="application/pdf"
+        width="300" height="200">
+      <br><br>
+
+      <object data="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" type="application/pdf"
+        width="300" height="200">
+        <p>Fallback: <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf">
+            Download PDF</a>.</p>
+      </object>
+    </section>
+
+    <hr>
+
+    <!-- Images & Graphics -->
+    <section id="images">
+      <h2><strong>Images &amp; Graphics</strong></h2>
+
+      <figure>
+        <img src="https://www.dreamhost.com/blog/wp-content/uploads/2024/06/03_over_nested_element-scaled.webp"
+          alt="Nested HTML structure" width="400">
+        <figcaption>Example of nested HTML elements diagram.</figcaption>
+      </figure>
+      <br>
+
+      <picture>
+        <source media="(max-width:600px)" srcset="https://via.placeholder.com/150">
+        <source media="(max-width:1200px)" srcset="https://via.placeholder.com/300">
+        <img src="https://via.placeholder.com/600" alt="Responsive placeholder image" width="400">
+      </picture>
+      <br><br>
+
+      <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+      </svg>
+      <br><br>
+
+      <canvas id="myCanvas" width="200" height="100">
+        Your browser does not support canvas.
+      </canvas>
+      <script>
+        const ctx = document.getElementById('myCanvas').getContext('2d');
+        ctx.fillStyle = 'lightblue';
+        ctx.fillRect(10, 10, 180, 80);
+      </script>
+      <br><br>
+
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Bird-9639.jpg" alt="Duck by the water" width="400">
+      <br><br>
+
+      <img src="https://images.pexels.com/photos/69776/tulips-bed-colorful-color-69776.jpeg" usemap="#flower-map"
+        alt="Field of colorful tulips" width="400">
+      <map name="flower-map">
+        <area shape="rect" coords="0,0,400,200" href="https://en.wikipedia.org/wiki/Tulip" alt="Tulip">
+        <area shape="circle" coords="200,150,80" href="https://en.wikipedia.org/wiki/Flower" alt="Flower">
+      </map>
+    </section>
+
+    <hr>
+
+    <!-- Interactive/Metadata -->
+    <section id="interactive">
+      <h2><strong>Interactive &amp; Metadata</strong></h2>
+
+      <details>
+        <summary>More details</summary>
+        <p>This text is revealed when the user clicks "More details".</p>
+      </details>
+      <br>
+
+      <dialog id="dlg">
+        This is a dialog box. It can be displayed via JavaScript.
+        <button onclick="document.getElementById('dlg').close()">Close</button>
+      </dialog>
+      <button onclick="document.getElementById('dlg').showModal()">Open Dialog</button>
+      <br><br>
+
+      <meter value="0.7" min="0" max="1">70%</meter>
+      <progress value="32" max="100">32%</progress>
+      <br><br>
+
+      <time datetime="2025-05-01T14:30">May 1, 2025 at 2:30 PM</time>
+      <br><br>
+
+      <abbr title="HyperText Markup Language">HTML</abbr>
+      <br><br>
+
+      <cite>“To be or not to be” – <time datetime="1600-01-01">Hamlet</time></cite>
+      <br><br>
+
+      <kbd>Ctrl</kbd> + <kbd>C</kbd>
+      <br><br>
+
+      <samp>Hello, World!</samp>
+      <br><br>
+
+      <var>x</var> + <var>y</var> = <var>z</var>
+      <br><br>
+
+      <bdi>مرحبا</bdi> (Arabic, bidirectional isolation)
+      <br><br>
+
+      break<wbr>here if needed
+      <br><br>
+
+      <noscript>JavaScript is disabled or not supported.</noscript>
+    </section>
+
+    <hr>
+
+    <!-- Web Components -->
+    <section id="webcomponents">
+      <h2><strong>Web Components</strong></h2>
+
+      <template id="tmpl">
+        <p>This is template content.</p>
+        <slot name="user-slot"></slot>
+      </template>
+      <p>Use JavaScript to instantiate this template.</p>
+    </section>
+
+    <hr>
+
+    <!-- Deprecated -->
+    <section id="deprecated">
+      <h2><strong>Deprecated Elements</strong></h2>
+      <p>Avoid these legacy tags in modern HTML5.</p>
+      <center>This text is centered (using &lt;center&gt;, deprecated).</center>
+      <font color="red">This text is red (using &lt;font&gt;, deprecated).</font>
+      <marquee>Scrolling text with &lt;marquee&gt;, deprecated.</marquee>
+    </section>
+
+  </main>
+
+  <hr>
+
+  <footer>
+    <p><strong>End of HTML5 Comprehensive Reference Guide</strong></p>
+  </footer>
+
+</body>
+
+</html>
