@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <iostream>
-using namespace std;
 int main(){
 	int i, arr[5]={23,23,4,23,4};
 	printf("array elements are: ");
