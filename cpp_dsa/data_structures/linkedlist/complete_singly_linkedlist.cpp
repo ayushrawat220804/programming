@@ -33,7 +33,6 @@ void insertatend(struct node** head, int newdata) {
         temp->next = newnode;
     }
 }
-void insertatrandom(struct node** head_ref, int newdata, int position){
     node* newnode = new node;
     newnode->data = newdata;
     if (position == 0) {
