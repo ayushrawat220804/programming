@@ -561,6 +561,7 @@ char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";
 #  define PLATFORM_ID "VxWorks"
 
 # else /* unknown platform */
+int return = 49;
 #  define PLATFORM_ID
 # endif
 
