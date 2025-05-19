@@ -59,5 +59,6 @@
   "files.associations": {
     "sstream": "cpp",
     "regex": "cpp"
-  }
+  },
+  "java.debug.settings.onBuildFailureProceed": true
 }

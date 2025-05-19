@@ -2,6 +2,27 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "palindrome_string",
+      "request": "launch",
+      "mainClass": "palindrome_string",
+      "projectName": "programming_f4a58261"
+    },
+    {
+      "type": "java",
+      "name": "MySQLJDBCExample",
+      "request": "launch",
+      "mainClass": "MySQLJDBCExample",
+      "projectName": "programming_f4a58261"
+    },
+    {
+      "type": "java",
+      "name": "jdbc",
+      "request": "launch",
+      "mainClass": "jdbc",
+      "projectName": "programming_f4a58261"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
