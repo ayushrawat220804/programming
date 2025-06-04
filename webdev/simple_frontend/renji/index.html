@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Renji's Portfolio - Showcasing animation and graphic design work">
+    <title>Renji's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Lightbox CSS -->
+    <style>
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            text-align: center;
+            padding-top: 20px;
+        }
+        
+        .lightbox img, .lightbox video {
+            max-width: 90%;
+            max-height: 80vh;
+            margin: auto;
+            display: block;
+        }
+        
+        .lightbox-close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .portfolio-link {
+            cursor: pointer;
+            color: white;
+            text-decoration: underline;
+            margin-top: 20px;
+            display: inline-block;
+            position: relative;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Renji<span>.</span></h1>
+            </div>
+        <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+        </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hello, I'm <span>Renji</span></h1>
+                <h2>Animation & Illustration Artist</h2>
+                <p>I transform ideas into captivating visuals and animations</p>
+                <div class="cta-buttons">
+                    <a href="#portfolio" class="btn primary-btn">View My Work</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Hero image or illustration can go here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <!-- Profile image can go here -->
+                </div>
+                <div class="about-text">
+                    <h3>Multi-talented Creative Artist</h3>
+                    <p>I'm Renji, a passionate graphic designer and animator with a keen eye for detail and a love for creating captivating visual experiences. My work combines artistic vision with technical expertise to deliver stunning results.</p>
+                    <p>With expertise in various design tools and animation techniques, I strive to push the boundaries of visual storytelling through my work.</p>
+                    <p><strong>Animation</strong> • <strong>Illustration</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Portfolio</h2>
+                <div class="divider"></div>
+                <p>A showcase of my latest work and creative projects</p>
+            </div>
+            
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="illustration">Illustration</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="illustration">
+                    <div class="portfolio-image">
+                        <img src="assets/assisnscreed.jpeg" alt="Assassin's Creed Artwork by Renji">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Assassin's Creed Fan Art</h3>
+                                <p>Illustration</p>
+                                <a class="portfolio-link" data-media="assets/assisnscreed.jpeg">View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="illustration">
+                    <div class="portfolio-image">
+                        <img src="assets/asphalt.jpeg" alt="Urban Landscape by Renji">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Urban Landscape</h3>
+                                <p>Illustration</p>
+                                <a class="portfolio-link" data-media="assets/asphalt.jpeg">View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="illustration">
+                    <div class="portfolio-image">
+                        <img src="assets/cars.jpeg" alt="Racing Concept by Renji">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Brand Identity</h3>
+                                <p>Illustration</p>
+                                <a class="portfolio-link" data-media="assets/cars.jpeg">View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="illustration">
+                    <div class="portfolio-image">
+                        <img src="assets/cyberpunk.jpeg" alt="Cyberpunk World by Renji">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Cyberpunk World</h3>
+                                <p>Illustration</p>
+                                <a class="portfolio-link" data-media="assets/cyberpunk.jpeg">View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="illustration">
+                    <div class="portfolio-image">
+                        <img src="assets/apex.jpg" alt="Apex Artwork by Renji">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Apex</h3>
+                                <p>Illustration</p>
+                                <a class="portfolio-link" data-media="assets/apex.jpg">View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="illustration">
+                    <div class="portfolio-image">
+                        <img src="assets/ninja.jpg" alt="Ninja Artwork by Renji">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Ninja</h3>
+                                <p>Illustration</p>
+                                <a class="portfolio-link" data-media="assets/ninja.jpg">View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="illustration">
+                    <div class="portfolio-image">
+                        <img src="assets/greenmanlambhorghiini.jpeg" alt="Green Man Lamborghini by Renji">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Green Man Lamborghini</h3>
+                                <p>Illustration</p>
+                                <a class="portfolio-link" data-media="assets/greenmanlambhorghiini.jpeg">View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="illustration">
+                    <div class="portfolio-image">
+                        <img src="assets/redman.jpeg" alt="Red Man by Renji">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Red Man</h3>
+                                <p>Illustration</p>
+                                <a class="portfolio-link" data-media="assets/redman.jpeg">View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="illustration">
+                    <div class="portfolio-image">
+                        <img src="assets/asphalt.jpeg" alt="Urban Landscape by Renji">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Urban Landscape</h3>
+                                <p>Illustration</p>
+                                <a class="portfolio-link" data-media="assets/asphalt.jpeg">View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="illustration">
+                    <div class="portfolio-image">
+                        <img src="assets/cars.jpeg" alt="Racing Concept by Renji">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Racing Concept</h3>
+                                <p>Illustration</p>
+                                <a class="portfolio-link" data-media="assets/cars.jpeg">View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="illustration">
+                    <div class="portfolio-image">
+                        <img src="assets/asphalt2.jpeg" alt="Asphalt 2 Artwork by Renji">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>City Streets</h3>
+                                <p>Illustration</p>
+                                <a class="portfolio-link" data-media="assets/asphalt2.jpeg">View Larger</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <div class="divider"></div>
+                <p>Interested in working together? Let's connect!</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>renji@example.com</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+91 923 XXX XXX</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>Haryana, India</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    <p>&copy; 2024 Renji. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Lightbox HTML -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="">
+        <video id="lightbox-video" controls>
+            <source src="" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script src="js/main.js"></script>
+    
+    <!-- Lightbox Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxVideo = document.getElementById('lightbox-video');
+            const lightboxClose = document.querySelector('.lightbox-close');
+            
+            // Get all portfolio links
+            const portfolioLinks = document.querySelectorAll('.portfolio-link');
+            
+            // Add click event to all portfolio links
+            portfolioLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    const mediaPath = this.getAttribute('data-media');
+                    const mediaType = this.getAttribute('data-type') || 'image';
+                    
+                    if (mediaType === 'video') {
+                        lightboxImg.style.display = 'none';
+                        lightboxVideo.style.display = 'block';
+                        lightboxVideo.querySelector('source').src = mediaPath;
+                        lightboxVideo.setAttribute('autoplay', '');
+                        lightboxVideo.setAttribute('loop', '');
+                        lightboxVideo.load();
+                        lightboxVideo.play();
+                    } else {
+                        lightboxVideo.style.display = 'none';
+                        lightboxImg.style.display = 'block';
+                        lightboxImg.src = mediaPath;
+                    }
+                    
+                    lightbox.style.display = 'block';
+                });
+            });
+            
+            // Close lightbox when clicking the close button
+            lightboxClose.addEventListener('click', function() {
+                lightbox.style.display = 'none';
+                lightboxVideo.pause();
+            });
+            
+            // Close lightbox when clicking outside the image
+            lightbox.addEventListener('click', function(e) {
+                if (e.target === lightbox) {
+                    lightbox.style.display = 'none';
+                    lightboxVideo.pause();
+                }
+            });
+        });
+    </script>
+
+    <!-- Force video playback 
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var video = document.getElementById('animationVideo');
+        
+        // Try to play the video as soon as possible
+        if (video) {
+            video.play().catch(function(error) {
+                console.log("Video play failed:", error);
+            });
+            
+            // Also try to play on user interaction
+            document.addEventListener('click', function() {
+                video.play().catch(function(error) {
+                    console.log("Video play failed after user interaction:", error);
+                });
+            }, { once: true });
+        }
+        
+        // Ensure lightbox video plays as well
+        const portfolioLinks = document.querySelectorAll('.portfolio-link[data-type="video"]');
+        portfolioLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                const lightboxVideo = document.querySelector('#lightbox video');
+                if (lightboxVideo) {
+                    setTimeout(function() {
+                        lightboxVideo.play().catch(function(error) {
+                            console.log("Lightbox video play failed:", error);
+                        });
+                    }, 500);
+                }
+            });
+        });
+    });
+    </script>
+    -->
+</body>
+</html>
