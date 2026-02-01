@@ -1,1 +1,19 @@
+# Compiled binaries
 *.exe
+*.out
+*.app
+
+# Object files
+*.o
+*.obj
+
+# Debug files
+*.pdb
+
+# Build folders
+build/
+bin/
+
+# IDE specific
+.vscode/
+.idea/
