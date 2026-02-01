@@ -1,19 +1,100 @@
-# Compiled binaries
+########################################
+# ===== Compiled binaries / executables
+########################################
 *.exe
 *.out
 *.app
+*.dll
+*.so
+*.dylib
+*.a
 
-# Object files
+########################################
+# ===== Object & intermediate files
+########################################
 *.o
 *.obj
+*.lo
+*.s
+*.i
 
-# Debug files
+########################################
+# ===== Debug / profiling files
+########################################
 *.pdb
+*.ilk
+*.map
+*.prof
+*.gcda
+*.gcno
+*.gcov
 
-# Build folders
+########################################
+# ===== Build directories
+########################################
 build/
 bin/
+dist/
+out/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+compile_commands.json
 
-# IDE specific
+########################################
+# ===== IDE / Editor settings
+########################################
 .vscode/
 .idea/
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+*.cbp
+*.depend
+*.layout
+
+########################################
+# ===== OS-generated files
+########################################
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+########################################
+# ===== Logs & temp files
+########################################
+*.log
+*.tmp
+*.swp
+*.bak
+*.old
+*.cache
+
+########################################
+# ===== Python (optional tooling)
+########################################
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+########################################
+# ===== Archives (optional)
+########################################
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+
+########################################
+# ===== Misc
+########################################
+*.pid
+*.seed
+*.stackdump
